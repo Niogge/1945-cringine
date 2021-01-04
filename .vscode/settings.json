@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "*.comp": "c"
+    },
+    "cmake.configureSettings": { 
+        "CMAKE_MODULE_PATH": "${workspaceFolder}/cmake/",
+        "SDL2_PATH":  "${workspaceFolder}/cmake/sdl2",
+        "SDL2_IMAGE_PATH":  "${workspaceFolder}/cmake/SDL2_image-2.0.5",
+        "SDL2_TTF_PATH":  "${workspaceFolder}/cmake/SDL2_ttf-2.0.15",
+        "SDL2_MIXER_PATH":  "${workspaceFolder}/cmake/SDL2_mixer-2.0.4"
+    }
+}

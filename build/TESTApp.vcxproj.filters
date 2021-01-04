@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\AIV\SDLCMemes\1945\test_src\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\AIV\SDLCMemes\1945\test_include\aiv-cunit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\AIV\SDLCMemes\1945\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\AIV\SDLCMemes\1945\test_src\test_bool.ct" />
+    <None Include="E:\AIV\SDLCMemes\1945\test_src\test_int.ct" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{A5FEAE3B-E814-35D3-B580-8E311E2ADB9C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{08E49D9B-2FD2-3182-8EBD-155C3EB4FC36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

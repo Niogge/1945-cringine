@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Collections\aiv-dictionary.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Collections\aiv-list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Collections\aiv-vector.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Engine\animator.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Engine\game.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Engine\gameObject.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Engine\managers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Engine\scene.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Engine\sprite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Math\vec2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Collections\aiv-common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Collections\aiv-dictionary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Collections\aiv-list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Collections\aiv-vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\animator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\component-factory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\gameObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\managers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Math\vec2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\AIV\SDLCMemes\1945\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{A5FEAE3B-E814-35D3-B580-8E311E2ADB9C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{08E49D9B-2FD2-3182-8EBD-155C3EB4FC36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
