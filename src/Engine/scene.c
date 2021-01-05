@@ -4,8 +4,8 @@ scene* new_scene(void(*builder)(scene* s), Game* game){
     s->game = game;
     s->drawMgr = new_drawmgr(game->renderer);
     s->updMgr = new_updmgr();
+    s->physMgr = new_physicsmgr();
     s->sceneObjects = aiv_vector_new();
-
     builder(s);
     return s;
 }
@@ -14,6 +14,9 @@ void add_scene_object(scene* scene, GameObject * go){
     register_updmgr(scene->updMgr,go);
     if(go->texture != NULL){
         register_drawmgr(scene->drawMgr, go);
+    }
+    if(go->rb != NULL){
+        register_physicsmgr(scene->physMgr, go);
     }
     
 }
@@ -38,4 +41,5 @@ void destroy_scene(scene* scene){
     aiv_vector_destroy(scene->sceneObjects);
     destroy_updmgr(scene->updMgr);
     destroy_drawmgr(scene->drawMgr);
+    destroy_physicsmgr(scene->physMgr);
 }

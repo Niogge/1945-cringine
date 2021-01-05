@@ -8,6 +8,7 @@ typedef struct{
     aiv_vector* sceneObjects;
     UpdateManager* updMgr;
     DrawManager* drawMgr;
+    PhysicsManager* physMgr;
 }scene;
 
 scene* new_scene(void(*builder)(scene* s), Game* game);

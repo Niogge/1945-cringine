@@ -22,6 +22,9 @@
     <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Engine\managers.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Engine\rigidbody.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Engine\scene.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -61,6 +64,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\managers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\rigidbody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\scene.h">

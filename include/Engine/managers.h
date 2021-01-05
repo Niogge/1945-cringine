@@ -41,7 +41,7 @@ typedef struct{
     Uint8* _keyStates;
 }InputManager;
 
-InputManager * input_manager;
+static InputManager * input_manager;
 
 
 InputManager* new_inputmgr();
@@ -50,4 +50,14 @@ boolean get_key(InputManager* mgr,SDL_Scancode key);
 void destroy_inputmgr(InputManager* mgr);
 
 
+typedef struct{
+    aiv_vector* registered_objects;
+}PhysicsManager;
+PhysicsManager* new_physicsmgr();
+void register_physicsmgr(PhysicsManager* d ,GameObject* go);
+void unregister_physicsmgr(PhysicsManager* d ,GameObject* go);
+void update_physicsmgr(PhysicsManager* d,float delta_time);
+void _collision_check(PhysicsManager* phy, GameObject* go);
+void _rb_update(GameObject* go, float delta_time);
+void destroy_physicsmgr(PhysicsManager* d );
 #endif

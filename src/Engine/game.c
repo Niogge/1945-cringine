@@ -4,6 +4,7 @@
 #include "aiv-vector.h"
 #include "scene.h"
 #include "animator.h"
+#include "rigidbody.h"
 #include <stdlib.h>
 
 Texture * textest;
@@ -11,12 +12,12 @@ void LoadMedia(Game* g){
     textest = load_texture(g->gfxMgr,"resources/player_plane.png", "player" ,65,65);
 }
 void scene1_ctor(scene* s){
-    GameObject* go = new_gameobject(vec2_new(10.f,10.f), get_texture(s->game->gfxMgr,"player"));
+    GameObject* go = new_gameobject(vec2_new(30.f,30.f), get_texture(s->game->gfxMgr,"player"));
     component* c = new_test_component();
     c->init(c);
     c->update(c,0.2f);
     attach_component(go,c);
-
+    
     Animator* anim = new_animator();
     Clip* clip = new_clip(vec2_new(0,0), vec2_new(2,0), 65,65,30);
     add_clip(anim,clip);
@@ -34,7 +35,10 @@ void scene2_ctor(scene* s){
     c->update(c,0.2f);
     GameObject* go = new_gameobject(vec2_new(40.f,40.f), get_texture(s->game->gfxMgr,"player"));
     attach_component(go,c);
-
+    rigidbody* rbody = new_rb_with_collider(vec2_new(0,0),vec2_new(10,10));
+    rbody->direction= vec2_new(1,0);
+    rbody->speed = 10;
+    attach_rigidbody(go, rbody);
     add_scene_object(s,go);
 }
 Game* game_new(int w, int h, const char * name){
@@ -134,6 +138,7 @@ void game_loop(Game* game){
 
         update(((scene*)aiv_vector_at(game->scenes_vector, game->scene_index))->updMgr, delta_time);
         draw(((scene*)aiv_vector_at(game->scenes_vector, game->scene_index))->drawMgr);
+        update_physicsmgr(((scene*)aiv_vector_at(game->scenes_vector, game->scene_index))->physMgr, delta_time);
         timer2+= delta_time;
         // if(timer2 >= 3){
         //     game->scene_index = game->scene_index ==1?0:1;

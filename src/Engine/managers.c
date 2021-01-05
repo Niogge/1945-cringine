@@ -138,3 +138,59 @@ void destroy_inputmgr(InputManager* mgr){
     free(mgr->_keyStates);
     free(mgr);
 }
+
+
+//////PHYSICS MGR
+PhysicsManager* new_physicsmgr(){
+    PhysicsManager* phy = (PhysicsManager*)malloc(sizeof(PhysicsManager));
+    phy->registered_objects = aiv_vector_new();
+    return phy;
+}
+void register_physicsmgr(PhysicsManager* phy ,GameObject* go){
+    aiv_vector_add(phy->registered_objects, go);
+}
+void unregister_physicsmgr(PhysicsManager* phy ,GameObject* go){
+    int index =-1;
+    for (int i = 0; i < phy->registered_objects->__count; i++)
+    {
+        if(phy->registered_objects->__items[i] == go){
+            index = i;
+            break;
+        }
+    }
+    if(index != -1){
+        aiv_vector_remove_at(phy->registered_objects,index);
+    }
+    
+}
+void update_physicsmgr(PhysicsManager* phy, float delta_time){
+    for (uint i = 0; i < phy->registered_objects->__count; i++)
+    {
+        GameObject* elem =(GameObject*) phy->registered_objects->__items[i];
+        _rb_update(elem, delta_time);
+        _collision_check(phy, elem);
+
+
+    }
+}
+void _collision_check(PhysicsManager* phy, GameObject* go){
+    for (uint i = 0; i < phy->registered_objects->__count; i++)
+    {
+        GameObject* elem =(GameObject*) phy->registered_objects->__items[i];
+        
+        if(elem == go){ continue;}
+        if((elem->rb->mask_self & go->rb->collision_mask) >0 ){
+            //TODO: Check collision;
+        }
+    }
+}
+void _rb_update(GameObject* go, float delta_time){
+    go->rb->pos.x = go->rb->pos.x + go->rb->direction.x*go->rb->speed*delta_time;
+    go->rb->pos.y = go->rb->pos.y + go->rb->direction.y*go->rb->speed*delta_time;
+    go->position = go->rb->pos;
+}
+
+void destroy_physicsmgr(PhysicsManager* phy ){
+    aiv_vector_destroy(phy->registered_objects);
+    free(phy);
+}
