@@ -13,10 +13,11 @@ void test_init(component* self){
 }
 
 void test_update(component* self,float dt){
-   if(get_key(input_manager, SDL_SCANCODE_P)){
-       vec2 p = self->owner->position;
-       vec2 p2 = vec2_new(p.x + 10.f*dt,p.y);
-       self->owner->position = p2;
+   if(get_key(SDL_SCANCODE_P)){
+       self->owner->rb->speed = 10;
+   }
+   else{
+       self->owner->rb->speed = 10;
    }
 }
 
@@ -24,6 +25,13 @@ void test_destructor(component* self){
     free(self->data);
     free(self);
 }
+
+void test_on_collision(component* self, GameObject* other){
+    int p =  self->owner->position.x;
+    printf("colliding %d\n", p );
+
+}
+
 
 component* new_test_component(){
     component* c = (component* )malloc(sizeof(component));
@@ -35,6 +43,7 @@ component* new_test_component(){
     td->s = "cane";
     c->data = td;
     c->destructor = test_destructor;
+    c->onCollision = test_on_collision;
 
     return c;
 }

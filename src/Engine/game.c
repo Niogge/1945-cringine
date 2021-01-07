@@ -14,10 +14,14 @@ void LoadMedia(Game* g){
 void scene1_ctor(scene* s){
     GameObject* go = new_gameobject(vec2_new(30.f,30.f), get_texture(s->game->gfxMgr,"player"));
     component* c = new_test_component();
-    c->init(c);
-    c->update(c,0.2f);
     attach_component(go,c);
-    
+    c->init(c);
+    rigidbody* rbody = new_rb_with_collider(vec2_new(0,0),vec2_new(65,65));
+    rbody->direction= vec2_new(1,0);
+    rbody->speed = 0;
+    rbody->collision_mask = ENEMY_MASK;
+    rbody->mask_self = PLAYER_MASK;
+    attach_rigidbody(go,rbody);
     Animator* anim = new_animator();
     Clip* clip = new_clip(vec2_new(0,0), vec2_new(2,0), 65,65,30);
     add_clip(anim,clip);
@@ -26,15 +30,27 @@ void scene1_ctor(scene* s){
 
     add_scene_object(s,go);
 
+    GameObject* go2 = new_gameobject(vec2_new(180.f,30.f), get_texture(s->game->gfxMgr,"player"));
+    rigidbody* rbody2 = new_rb_with_collider(vec2_new(0,0),vec2_new(65,65));
+    rbody2->direction= vec2_new(1,0);
+    rbody2->speed = 0;
+    rbody2->collision_mask = PLAYER_MASK;
+    rbody2->mask_self = ENEMY_MASK;
+    attach_rigidbody(go2, rbody2);
+    Animator* anim2 = new_animator();
+    Clip* clip2 = new_clip(vec2_new(0,0), vec2_new(2,0), 65,65,30);
+    add_clip(anim2,clip2);
+    set_animator(go2,anim2);
 
+
+    add_scene_object(s,go2);
 
 }
 void scene2_ctor(scene* s){
     component* c = new_test_component();
-    c->init(c);
-    c->update(c,0.2f);
     GameObject* go = new_gameobject(vec2_new(40.f,40.f), get_texture(s->game->gfxMgr,"player"));
     attach_component(go,c);
+    c->init(c);
     rigidbody* rbody = new_rb_with_collider(vec2_new(0,0),vec2_new(10,10));
     rbody->direction= vec2_new(1,0);
     rbody->speed = 10;
@@ -75,7 +91,7 @@ Game* game_new(int w, int h, const char * name){
         // handle error
     }
     g->gfxMgr = new_gfxmgr(g->renderer);
-    input_manager = new_inputmgr();
+    init_inputmgr();
 
     LoadMedia(g);
     g->scenes_vector = aiv_vector_new();
@@ -133,7 +149,7 @@ void game_loop(Game* game){
         // update(game->updMgr, delta_time);
         // draw(game->drawMgr);
         
-        update_inputmgr(input_manager);
+        update_inputmgr();
 
 
         update(((scene*)aiv_vector_at(game->scenes_vector, game->scene_index))->updMgr, delta_time);
@@ -145,7 +161,7 @@ void game_loop(Game* game){
         //     timer2= 0.f;
         // }
 
-        if(get_key(input_manager, SDL_SCANCODE_C)){
+        if(get_key(SDL_SCANCODE_C)){
             game->scene_index = game->scene_index ==1?0:1;
             timer2= 0.f;
         }

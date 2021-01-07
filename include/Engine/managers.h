@@ -41,13 +41,11 @@ typedef struct{
     Uint8* _keyStates;
 }InputManager;
 
-static InputManager * input_manager;
 
-
-InputManager* new_inputmgr();
-void update_inputmgr(InputManager * mgr);
-boolean get_key(InputManager* mgr,SDL_Scancode key);
-void destroy_inputmgr(InputManager* mgr);
+new_inputmgr();
+void update_inputmgr();
+boolean get_key(SDL_Scancode key);
+void destroy_inputmgr();
 
 
 typedef struct{
@@ -57,7 +55,7 @@ PhysicsManager* new_physicsmgr();
 void register_physicsmgr(PhysicsManager* d ,GameObject* go);
 void unregister_physicsmgr(PhysicsManager* d ,GameObject* go);
 void update_physicsmgr(PhysicsManager* d,float delta_time);
-void _collision_check(PhysicsManager* phy, GameObject* go);
+void _collision_check(PhysicsManager* phy);
 void _rb_update(GameObject* go, float delta_time);
 void destroy_physicsmgr(PhysicsManager* d );
 #endif

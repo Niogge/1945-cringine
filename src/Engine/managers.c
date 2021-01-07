@@ -120,23 +120,25 @@ void destroy_drawmgr(DrawManager* d ){
 
 
 ///////// INPUT MGR
-InputManager* new_inputmgr(){
-    InputManager* i = (InputManager*)malloc(sizeof(InputManager));
-    i->_keyStates = NULL;
+
+static InputManager * _input_manager;
+void init_inputmgr(){
+    _input_manager = (InputManager*)malloc(sizeof(InputManager));
+    _input_manager->_keyStates = NULL;
 }
-void update_inputmgr(InputManager * mgr){
-    mgr->_keyStates= SDL_GetKeyboardState(0);
+void update_inputmgr(){
+    _input_manager->_keyStates= SDL_GetKeyboardState(0);
 }
-boolean get_key(InputManager* mgr,SDL_Scancode key){
-    if (mgr->_keyStates != 0)
+boolean get_key(SDL_Scancode key){
+    if (_input_manager->_keyStates != 0)
 	{
-		return mgr->_keyStates[key];
+		return _input_manager->_keyStates[key];
 	}
 	return false;
 }
-void destroy_inputmgr(InputManager* mgr){
-    free(mgr->_keyStates);
-    free(mgr);
+void destroy_inputmgr(){
+    free(_input_manager->_keyStates);
+    free(_input_manager);
 }
 
 
@@ -168,19 +170,50 @@ void update_physicsmgr(PhysicsManager* phy, float delta_time){
     {
         GameObject* elem =(GameObject*) phy->registered_objects->__items[i];
         _rb_update(elem, delta_time);
-        _collision_check(phy, elem);
 
 
     }
+    _collision_check(phy);
 }
-void _collision_check(PhysicsManager* phy, GameObject* go){
-    for (uint i = 0; i < phy->registered_objects->__count; i++)
+boolean boxbox_coll(GameObject* A, GameObject* B){
+    int Ax = A->position.x - A->rb->coll->size.x * A->pivot.x;
+    int Ay = A->position.y - A->rb->coll->size.y * A->pivot.y;
+    int Aw = A->rb->coll->size.x;
+    int Ah = A->rb->coll->size.y;
+
+
+    int Bx = B->position.x - B->rb->coll->size.x * B->pivot.x;
+    int By = B->position.y - B->rb->coll->size.y * B->pivot.y;
+    int Bw = B->rb->coll->size.x;
+    int Bh = B->rb->coll->size.y;
+
+
+    if(Ax<Bx + Bw &&
+        Ax+Aw > Bx &&
+        Ay< By + Bh &&
+        Ay+Ah>By){
+            return true;
+        }
+    return false;
+}
+void _collision_check(PhysicsManager* phy){
+    GameObject * go;
+    for (uint j = 0; j < phy->registered_objects->__count; j++)
     {
-        GameObject* elem =(GameObject*) phy->registered_objects->__items[i];
-        
-        if(elem == go){ continue;}
-        if((elem->rb->mask_self & go->rb->collision_mask) >0 ){
-            //TODO: Check collision;
+        /* code */
+        go = (GameObject*) phy->registered_objects->__items[j];
+        for (uint i = j+1; i < phy->registered_objects->__count; i++)
+        {
+            GameObject* elem =(GameObject*) phy->registered_objects->__items[i];
+            
+            if(elem == go){ continue;}
+            if((elem->rb->mask_self & go->rb->collision_mask) >0 ){
+                //TODO: Check collision;
+                if(boxbox_coll(elem,go) || boxbox_coll(go, elem) ){
+                    collision_handle(elem,go);
+                    collision_handle(go,elem);
+                }
+            }
         }
     }
 }

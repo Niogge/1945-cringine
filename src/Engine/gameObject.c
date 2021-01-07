@@ -28,6 +28,8 @@ void set_animator(GameObject* go, Animator* a){
 void updater(void * elem, float delta_time){
     ((component*)elem)->update(elem, delta_time);
 }
+void collision_handle(GameObject* go, GameObject* other);
+
 void update_gameobject(GameObject* go, float delta_time){
     if(go->texture != NULL){
         go->texture->renderQuad->x = go->position.x-go->pivot.x*go->texture->renderQuad->w;
@@ -40,6 +42,18 @@ void update_gameobject(GameObject* go, float delta_time){
     }
     aiv_vector_foreach_dt(go->components, updater, delta_time);
 }
+
+void collision_handle(GameObject* go, GameObject* other){
+    for (int i = 0; i < go->components->__count; i++)
+    {
+        component * c = go->components->__items[i];
+        if(c->onCollision != NULL){
+            c->onCollision(c,other);
+        }
+    }
+    
+}
+
 
 void attach_component(GameObject* go, component * comp){
     aiv_vector_add(go->components, (void*) comp);
