@@ -20,6 +20,9 @@ float vec2_magnitude(vec2*v){
 vec2 vec2_norm(vec2*v){
     vec2 n;
     float mag = vec2_magnitude(v);
+    if(mag==0){
+        return *v;
+    }
     n.x = v->x/mag;
     n.y = v->y/mag;
     return n;

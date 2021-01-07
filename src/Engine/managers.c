@@ -107,9 +107,12 @@ void draw(DrawManager* d){
     {
         void* elem = d->registered_objects->__items[i];
 
-        Sprite* s = ((GameObject*) elem)->texture;
-    
-        SDL_RenderCopy(d->target,s->texture,s->renderFrame,s->renderQuad);
+        if(((GameObject*) elem)->active){
+
+            Sprite* s = ((GameObject*) elem)->texture;
+        
+            SDL_RenderCopy(d->target,s->texture,s->renderFrame,s->renderQuad);
+        }
     }
     
 }
@@ -169,7 +172,10 @@ void update_physicsmgr(PhysicsManager* phy, float delta_time){
     for (uint i = 0; i < phy->registered_objects->__count; i++)
     {
         GameObject* elem =(GameObject*) phy->registered_objects->__items[i];
-        _rb_update(elem, delta_time);
+        if(elem->active){
+            _rb_update(elem, delta_time);
+
+        }
 
 
     }
@@ -202,10 +208,15 @@ void _collision_check(PhysicsManager* phy){
     {
         /* code */
         go = (GameObject*) phy->registered_objects->__items[j];
+        if(go->active == false){
+            continue;
+        }
         for (uint i = j+1; i < phy->registered_objects->__count; i++)
         {
             GameObject* elem =(GameObject*) phy->registered_objects->__items[i];
-            
+            if(elem->active == false){
+                continue;
+            }
             if(elem == go){ continue;}
             if((elem->rb->mask_self & go->rb->collision_mask) >0 ){
                 //TODO: Check collision;

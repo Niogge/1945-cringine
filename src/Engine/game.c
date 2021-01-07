@@ -13,9 +13,6 @@ void LoadMedia(Game* g){
 }
 void scene1_ctor(scene* s){
     GameObject* go = new_gameobject(vec2_new(30.f,30.f), get_texture(s->game->gfxMgr,"player"));
-    component* c = new_test_component();
-    attach_component(go,c);
-    c->init(c);
     rigidbody* rbody = new_rb_with_collider(vec2_new(0,0),vec2_new(65,65));
     rbody->direction= vec2_new(1,0);
     rbody->speed = 0;
@@ -27,6 +24,9 @@ void scene1_ctor(scene* s){
     add_clip(anim,clip);
     set_animator(go,anim);
 
+    component* c = new_player_movement();
+    attach_component(go,c);
+    c->init(c);
 
     add_scene_object(s,go);
 
@@ -44,6 +44,7 @@ void scene1_ctor(scene* s){
 
 
     add_scene_object(s,go2);
+    //go2->active = false;
 
 }
 void scene2_ctor(scene* s){

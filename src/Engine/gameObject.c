@@ -7,6 +7,7 @@ GameObject* new_gameobject(vec2 pos, Texture* Texture){
     go->animator = NULL;
     go->pivot = vec2_new(0.5,0.5);
     go->rb = NULL;
+    go->active = true;
     return go;
 }
 GameObject* new_gameobject_no_texture(vec2 pos){
@@ -16,6 +17,7 @@ GameObject* new_gameobject_no_texture(vec2 pos){
     go->texture = NULL;
     go->animator = NULL;
     go->rb = NULL;
+    go->active = true;
 
     go->pivot = vec2_new(0.5,0.5);
     return go;
@@ -31,14 +33,17 @@ void updater(void * elem, float delta_time){
 void collision_handle(GameObject* go, GameObject* other);
 
 void update_gameobject(GameObject* go, float delta_time){
-    if(go->texture != NULL){
-        go->texture->renderQuad->x = go->position.x-go->pivot.x*go->texture->renderQuad->w;
-        go->texture->renderQuad->y = go->position.y-go->pivot.y*go->texture->renderQuad->h;
-        if(go->animator != NULL){
-            vec2 v = update_animator(go->animator, delta_time);
-            go->texture->renderFrame->x = v.x;
-            go->texture->renderFrame->y = v.y;
+    if(go->active){
+        if(go->texture != NULL){
+            go->texture->renderQuad->x = go->position.x-go->pivot.x*go->texture->renderQuad->w;
+            go->texture->renderQuad->y = go->position.y-go->pivot.y*go->texture->renderQuad->h;
+            if(go->animator != NULL){
+                vec2 v = update_animator(go->animator, delta_time);
+                go->texture->renderFrame->x = v.x;
+                go->texture->renderFrame->y = v.y;
+            }
         }
+
     }
     aiv_vector_foreach_dt(go->components, updater, delta_time);
 }

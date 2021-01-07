@@ -13,6 +13,7 @@ typedef struct{
     Sprite* texture;
     Animator* animator;
     rigidbody* rb;
+    boolean active;
 }GameObject;
 
 struct _component{
@@ -24,7 +25,6 @@ struct _component{
     void* data;
 };
 typedef struct _component component;
-
 
 GameObject* new_gameobject(vec2 p, Texture* Texture);
 GameObject* new_gameobject_no_texture(vec2 p);
