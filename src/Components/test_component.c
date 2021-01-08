@@ -1,12 +1,7 @@
-#include "gameObject.h"
+#include "test_component.h"
 #include "managers.h"
 #include <stdio.h>
 #include <SDL.h>
-typedef struct{
-    int a;
-    int b;
-    char* s;
-} test_data;
 
 void test_init(component* self){
     printf("Hello\n");

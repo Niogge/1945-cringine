@@ -29,4 +29,5 @@ void* aiv_vector_find_one(aiv_vector* vector, boolean(*func)(void*));
 aiv_vector* aiv_vector_find_all(aiv_vector* vector, boolean(*func)(void*));
 void aiv_vector_bubble(aiv_vector* vector, int (*comparator)(void*,void*));
 void aiv_vector_quick(aiv_vector* vector, int (*comparator)(void*,void*));
+void* aiv_vector_pop(aiv_vector* vector);
 #endif // AIV_VECTOR_H

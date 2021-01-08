@@ -13,7 +13,7 @@ void add_scene_object(scene* scene, GameObject * go){
     aiv_vector_add(scene->sceneObjects,go);
     register_updmgr(scene->updMgr,go);
     if(go->texture != NULL){
-        register_drawmgr(scene->drawMgr, go);
+        register_drawmgr(scene->drawMgr, go, go->layer);
     }
     if(go->rb != NULL){
         register_physicsmgr(scene->physMgr, go);
@@ -34,7 +34,7 @@ void remove_scene_object(scene* scene, GameObject * go){
     }
 
     unregister_updmgr(scene->updMgr,go);
-    unregister_drawmgr(scene->drawMgr,go);
+    unregister_drawmgr(scene->drawMgr,go, go->layer);
 }
 void destroy_scene(scene* scene){
     aiv_vector_foreach(scene->sceneObjects,destroy_gameobject);

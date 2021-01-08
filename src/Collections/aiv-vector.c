@@ -220,7 +220,11 @@ void aiv_vector_quick(aiv_vector* vector, int (*comparator)(void*,void*)){
     __aiv_vector_quick_recurs(vector, comparator, 0, vector->__count -1);
 }
 
-
+void* aiv_vector_pop(aiv_vector* vector){
+    void* to_return = aiv_vector_at(vector, 0);
+    aiv_vector_remove_at(vector,0);
+    return to_return;
+}
 /*
 int algoritmo(a, b){
     int sum = a+b;  //1

@@ -1,13 +1,7 @@
-#include "gameObject.h"
+#include "player_movement_component.h"
 #include "managers.h"
 #include <stdio.h>
 #include <SDL.h>
-
-typedef struct{
-
-    vec2 last_pos;
-}movement_data;
-
 
 void player_movement_init(component * self){
     printf("player movement initalized\n");
@@ -41,6 +35,7 @@ void player_movement_update(component* self,float dt){
 }
 
 void player_movement_destructor(component* self){
+    free(self->data);
     free(self);
 }
 

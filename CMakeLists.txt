@@ -34,13 +34,13 @@ if(SDL2_MIXER_FOUND)
     message( ${SDL2_MIXER_LIBRARIES} )
 endif()
 
-file(GLOB SOURCES "src/*.c" "src/Engine/*.c" "src/Math/*.c" "src/Collections/*.c" )
-file(GLOB HEADERS "include/*.h" "include/Engine/*.h" "include/Math/*.h" "include/Collections/*.h")
+file(GLOB SOURCES "src/*.c" "src/Engine/*.c" "src/Math/*.c" "src/Collections/*.c" "src/Components/*.c" )
+file(GLOB HEADERS "include/*.h" "include/Engine/*.h" "include/Math/*.h" "include/Collections/*.h" "include/Components/*.h")
 
 add_executable(SDLApp ${SOURCES} ${HEADERS})
 #In automatico carica gli include e la library (dipendenza .lib)
 target_link_libraries(SDLApp ${SDL2_LIBRARY} ${SDL2_IMAGE_LIBRARIES} ${SDL2TTF_LIBRARY} ${SDL2_MIXER_LIBRARIES})
-target_include_directories(SDLApp PRIVATE ${SDL2_INCLUDE_DIR} ${SDL2_IMAGE_INCLUDE_DIRS} ${SDL2TTF_INCLUDE_DIR} ${SDL2_MIXER_INCLUDE_DIRS} include include/Engine include/Math include/Collections src/Components)
+target_include_directories(SDLApp PRIVATE ${SDL2_INCLUDE_DIR} ${SDL2_IMAGE_INCLUDE_DIRS} ${SDL2TTF_INCLUDE_DIR} ${SDL2_MIXER_INCLUDE_DIRS} include include/Engine include/Math include/Collections include/Components)
 
 
 include(GNUInstallDirs)

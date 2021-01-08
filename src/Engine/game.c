@@ -1,22 +1,23 @@
 #include "game.h"
+#include "scene.h"
 #include "component-factory.h"
 #include "vec2.h"
 #include "aiv-vector.h"
-#include "scene.h"
 #include "animator.h"
 #include "rigidbody.h"
 #include <stdlib.h>
 
 Texture * textest;
 void LoadMedia(Game* g){
-    textest = load_texture(g->gfxMgr,"resources/player_plane.png", "player" ,65,65);
+    textest = load_texture("resources/player_plane.png", "player" ,65,65);
+    textest = load_texture("resources/bullet.png", "bullet" ,32,32);
 }
 void scene1_ctor(scene* s){
-    GameObject* go = new_gameobject(vec2_new(30.f,30.f), get_texture(s->game->gfxMgr,"player"));
+    GameObject* go = new_gameobject(vec2_new(30.f,30.f), get_texture("player"));
     rigidbody* rbody = new_rb_with_collider(vec2_new(0,0),vec2_new(65,65));
     rbody->direction= vec2_new(1,0);
     rbody->speed = 0;
-    rbody->collision_mask = ENEMY_MASK;
+    rbody->collision_mask = ENEMY_MASK|BULLET_MASK;
     rbody->mask_self = PLAYER_MASK;
     attach_rigidbody(go,rbody);
     Animator* anim = new_animator();
@@ -28,13 +29,17 @@ void scene1_ctor(scene* s){
     attach_component(go,c);
     c->init(c);
 
+    component* shoot = new_player_shooting();
+    attach_component(go, shoot);
+    shoot->init_scene(shoot, s);
+
     add_scene_object(s,go);
 
-    GameObject* go2 = new_gameobject(vec2_new(180.f,30.f), get_texture(s->game->gfxMgr,"player"));
+    GameObject* go2 = new_gameobject_layer(vec2_new(180.f,30.f), get_texture("player"), BACK);
     rigidbody* rbody2 = new_rb_with_collider(vec2_new(0,0),vec2_new(65,65));
     rbody2->direction= vec2_new(1,0);
     rbody2->speed = 0;
-    rbody2->collision_mask = PLAYER_MASK;
+    rbody2->collision_mask = PLAYER_MASK|BULLET_MASK;
     rbody2->mask_self = ENEMY_MASK;
     attach_rigidbody(go2, rbody2);
     Animator* anim2 = new_animator();
@@ -42,14 +47,28 @@ void scene1_ctor(scene* s){
     add_clip(anim2,clip2);
     set_animator(go2,anim2);
 
-
     add_scene_object(s,go2);
+
+    GameObject* bullet_go = new_gameobject(vec2_new(180.f,180.f), get_texture( "bullet"));
+    rigidbody* bullet_rigidbody = new_rb_with_collider(bullet_go->position, vec2_new(32,32));
+    bullet_rigidbody->direction = vec2_new(0,0);
+    bullet_rigidbody->speed=0;
+    bullet_rigidbody->collision_mask = ENEMY_MASK | PLAYER_MASK;
+    bullet_rigidbody->mask_self = BULLET_MASK;
+    attach_rigidbody(bullet_go, bullet_rigidbody);
+
+    component * bullet_c = new_bullet_behaviour();
+    attach_component(bullet_go, bullet_c);
+    bullet_c->init(bullet_c);
+
+    add_scene_object(s, bullet_go);
+
     //go2->active = false;
 
 }
 void scene2_ctor(scene* s){
     component* c = new_test_component();
-    GameObject* go = new_gameobject(vec2_new(40.f,40.f), get_texture(s->game->gfxMgr,"player"));
+    GameObject* go = new_gameobject(vec2_new(40.f,40.f), get_texture("player"));
     attach_component(go,c);
     c->init(c);
     rigidbody* rbody = new_rb_with_collider(vec2_new(0,0),vec2_new(10,10));
@@ -91,17 +110,16 @@ Game* game_new(int w, int h, const char * name){
         printf("IMG_Init: %s\n", IMG_GetError());
         // handle error
     }
-    g->gfxMgr = new_gfxmgr(g->renderer);
+    init_gfxmgr(g->renderer);
     init_inputmgr();
+    init_scene_manager();
 
     LoadMedia(g);
-    g->scenes_vector = aiv_vector_new();
     scene * main_scene = new_scene(scene1_ctor,g);
-    aiv_vector_add(g->scenes_vector,main_scene);
     scene * second_scene = new_scene(scene2_ctor,g);
-    aiv_vector_add(g->scenes_vector,second_scene);
-    g->scene_index = 0;
 
+    register_scene(main_scene);
+    register_scene(second_scene);
 
 
     return g;
@@ -153,22 +171,22 @@ void game_loop(Game* game){
         update_inputmgr();
 
 
-        update(((scene*)aiv_vector_at(game->scenes_vector, game->scene_index))->updMgr, delta_time);
-        draw(((scene*)aiv_vector_at(game->scenes_vector, game->scene_index))->drawMgr);
-        update_physicsmgr(((scene*)aiv_vector_at(game->scenes_vector, game->scene_index))->physMgr, delta_time);
+        update(((scene*)current_scene())->updMgr, delta_time);
+        draw(((scene*)current_scene())->drawMgr);
+        update_physicsmgr(((scene*)current_scene())->physMgr, delta_time);
         timer2+= delta_time;
         // if(timer2 >= 3){
         //     game->scene_index = game->scene_index ==1?0:1;
         //     timer2= 0.f;
         // }
 
-        if(get_key(SDL_SCANCODE_C)){
-            game->scene_index = game->scene_index ==1?0:1;
+        if(get_key(SDL_SCANCODE_C) && timer2>0.5f){
+            go_to_scene(current_scene_index()==1?0:1);
             timer2= 0.f;
         }
         SDL_RenderPresent(game->renderer);
         
-
+        
         // Uint8* state = SDL_GetKeyboardState(NULL);
         // if(state[SDL_SCANCODE_LEFT]){
         //     bmp_rect_frame.x += (-1.f*delta_time );

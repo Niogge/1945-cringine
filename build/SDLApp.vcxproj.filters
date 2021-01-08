@@ -10,6 +10,18 @@
     <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Collections\aiv-vector.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\bullet_behaviour_component.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\player_movement_component.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\player_shooting_component.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\test_component.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Engine\animator.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -51,10 +63,22 @@
     <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Collections\aiv-vector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\animator.h">
+    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\bullet_behaviour_component.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\component-factory.h">
+    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\component-factory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\player_movement_component.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\player_shooting_component.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\test_component.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\animator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\game.h">

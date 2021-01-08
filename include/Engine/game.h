@@ -11,9 +11,7 @@ typedef struct{
     SDL_Renderer* renderer;
     int width;
     int height; 
-    aiv_vector* scenes_vector;
-    uint scene_index;
-    GraphicsManager* gfxMgr;
+
 }Game;
 
 

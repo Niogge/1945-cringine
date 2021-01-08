@@ -1,17 +1,19 @@
 #include "managers.h"
 #include <stdio.h>
 #include <string.h>
-GraphicsManager* new_gfxmgr(SDL_Renderer* renderTarget){
-    GraphicsManager * g = (GraphicsManager*) malloc(sizeof(GraphicsManager));
-    g->loadedTextures = aiv_dict_new();
-    g->target = renderTarget;
-    return g; 
+
+static GraphicsManager* gfxmgr;
+void init_gfxmgr(SDL_Renderer* renderTarget){
+    gfxmgr = (GraphicsManager*) malloc(sizeof(GraphicsManager));
+    gfxmgr->loadedTextures = aiv_dict_new();
+    gfxmgr->target = renderTarget;
+
 }
-Texture* load_texture(GraphicsManager* gfxMgr,const char* path, const char * texture_key , int w, int h){
+Texture* load_texture(const char* path, const char * texture_key , int w, int h){
     SDL_Surface* tempTexture = IMG_Load(path);
 	if (tempTexture != NULL)
 	{
-		SDL_Texture * newTexture = SDL_CreateTextureFromSurface(gfxMgr->target, tempTexture);
+		SDL_Texture * newTexture = SDL_CreateTextureFromSurface(gfxmgr->target, tempTexture);
 		Texture* tex = (Texture*) malloc(sizeof(Texture));
 		if (newTexture == NULL)
 		{
@@ -24,7 +26,7 @@ Texture* load_texture(GraphicsManager* gfxMgr,const char* path, const char * tex
 			tex->h =h;
 			tex->w = w;
             char* key = texture_key;
-            aiv_dict_put(gfxMgr->loadedTextures,key,(uint)strlen(key),tex);
+            aiv_dict_put(gfxmgr->loadedTextures,key,(uint)strlen(key),tex);
 		}
 		SDL_FreeSurface(tempTexture);
 		return tex;
@@ -36,9 +38,9 @@ Texture* load_texture(GraphicsManager* gfxMgr,const char* path, const char * tex
 	}
 }
 
-Texture* get_texture(GraphicsManager* gfxMgr, const char * texture_key ){
+Texture* get_texture(const char * texture_key ){
     char * key = texture_key;
-    return (Texture*)aiv_dict_get(gfxMgr->loadedTextures,key, (uint)strlen(key));
+    return (Texture*)aiv_dict_get(gfxmgr->loadedTextures,key, (uint)strlen(key));
 }
 
 ///////////////UPDMGR
@@ -79,33 +81,68 @@ void destroy_updmgr(UpdateManager * u){
 DrawManager* new_drawmgr(SDL_Renderer* renderer){
     DrawManager* d = (DrawManager*)malloc(sizeof(DrawManager));
     d->target = renderer;
-    d->registered_objects = aiv_vector_new();
+    d->registered_objects_fore = aiv_vector_new();
+    d->registered_objects_play = aiv_vector_new();
+    d->registered_objects_back = aiv_vector_new();
+    d->registered_objects_backest= aiv_vector_new();
     return d;
 }
 
-void register_drawmgr(DrawManager* d ,GameObject* go){
-    aiv_vector_add(d->registered_objects, go);
+void register_drawmgr(DrawManager* d ,GameObject* go,enum drawLayers layer){
+    switch(layer){
+        case FORE:
+            aiv_vector_add(d->registered_objects_fore, go);
+            break;
+        case PLAY:
+            aiv_vector_add(d->registered_objects_play, go);
+            break;
+        case BACK:
+            aiv_vector_add(d->registered_objects_back, go);
+            break;
+        case BACKEST:
+            aiv_vector_add(d->registered_objects_backest, go);
+            break;
+        default:
+            break;
+    }
 }
 
 
-void unregister_drawmgr(DrawManager* d ,GameObject* go){
-int index =-1;
-    for (int i = 0; i < d->registered_objects->__count; i++)
+void unregister_drawmgr(DrawManager* d ,GameObject* go, enum drawLayers layer){
+    aiv_vector* layer_vector = NULL;
+    switch(layer){
+        case FORE:
+            layer_vector= d->registered_objects_fore;
+            break;
+        case PLAY:
+            layer_vector= d->registered_objects_fore;
+            break;
+        case BACK:
+            layer_vector= d->registered_objects_fore;
+            break;
+        case BACKEST:
+            layer_vector= d->registered_objects_backest;
+            break;
+        default:
+            return;
+    }
+
+    int index =-1;
+    for (int i = 0; i < layer_vector->__count; i++)
     {
-        if(d->registered_objects->__items[i] == go){
+        if(layer_vector->__items[i] == go){
             index = i;
             break;
         }
     }
     if(index != -1){
-        aiv_vector_remove_at(d->registered_objects,index);
+        aiv_vector_remove_at(layer_vector,index);
     }
 }
-
-void draw(DrawManager* d){
-    for (uint i = 0; i < d->registered_objects->__count; i++)
+void INTERNAL_draw(DrawManager* d,aiv_vector * layer_vector){
+    for (uint i = 0; i < layer_vector->__count; i++)
     {
-        void* elem = d->registered_objects->__items[i];
+        void* elem = layer_vector->__items[i];
 
         if(((GameObject*) elem)->active){
 
@@ -114,10 +151,19 @@ void draw(DrawManager* d){
             SDL_RenderCopy(d->target,s->texture,s->renderFrame,s->renderQuad);
         }
     }
+}
+void draw(DrawManager* d){
+    INTERNAL_draw(d, d->registered_objects_backest);
+    INTERNAL_draw(d, d->registered_objects_back);
+    INTERNAL_draw(d, d->registered_objects_play);
+    INTERNAL_draw(d, d->registered_objects_fore);
     
 }
 void destroy_drawmgr(DrawManager* d ){
-    aiv_vector_destroy(d->registered_objects);
+    aiv_vector_destroy(d->registered_objects_backest);
+    aiv_vector_destroy(d->registered_objects_back);
+    aiv_vector_destroy(d->registered_objects_play);
+    aiv_vector_destroy(d->registered_objects_fore);
     free(d);
 }
 
@@ -237,4 +283,32 @@ void _rb_update(GameObject* go, float delta_time){
 void destroy_physicsmgr(PhysicsManager* phy ){
     aiv_vector_destroy(phy->registered_objects);
     free(phy);
+}
+
+////////////////SCENE MANAGER
+static SceneManager* scene_mgr;
+init_scene_manager(){
+    scene_mgr = (SceneManager*)malloc(sizeof(SceneManager));
+    scene_mgr->scenes_vector = aiv_vector_new();
+    scene_mgr->scene_index = 0;
+}
+void * current_scene(){
+    return aiv_vector_at(scene_mgr->scenes_vector,scene_mgr->scene_index);
+}
+int register_scene(void * to_register){
+    aiv_vector_add(scene_mgr->scenes_vector,to_register);
+    return aiv_vector_size(scene_mgr->scenes_vector)-1;
+}
+void * get_scene_at(int i ){
+    return aiv_vector_at(scene_mgr->scenes_vector,i);
+}
+int current_scene_index(){
+    return scene_mgr->scene_index;
+}
+void go_to_scene(int i){
+    scene_mgr->scene_index = i;
+}
+void destroy_scene_manager(){
+    aiv_vector_destroy(scene_mgr->scenes_vector);
+    free(scene_mgr);
 }

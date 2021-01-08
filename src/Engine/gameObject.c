@@ -1,4 +1,5 @@
 #include "gameObject.h"
+#include "managers.h"
 GameObject* new_gameobject(vec2 pos, Texture* Texture){
     GameObject* go = (GameObject*)malloc(sizeof(GameObject));
     go->position = pos;
@@ -8,7 +9,12 @@ GameObject* new_gameobject(vec2 pos, Texture* Texture){
     go->pivot = vec2_new(0.5,0.5);
     go->rb = NULL;
     go->active = true;
+    go->layer = PLAY;
     return go;
+}
+GameObject* new_gameobject_layer(vec2 pos, Texture* Texture, enum drawLayers layer){
+    GameObject* go =new_gameobject(pos,Texture);
+    go->layer = layer;
 }
 GameObject* new_gameobject_no_texture(vec2 pos){
     GameObject* go = (GameObject*)malloc(sizeof(GameObject));

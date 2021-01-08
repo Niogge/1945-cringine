@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "MinSizeRel/SDLApp.exe"
+			"path" : "RelWithDebInfo/SDLApp.exe"
 		},
 		{
-			"path" : "MinSizeRel/SDLApp.pdb"
+			"path" : "RelWithDebInfo/SDLApp.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -45,7 +45,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /MD /O1 /Ob1 /DNDEBUG  "
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /MD /Zi /O2 /Ob1 /DNDEBUG  "
 				}
 			],
 			"includes" : 
@@ -84,7 +84,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "E:/AIV/SDLCMemes/1945/src/Components"
+					"path" : "E:/AIV/SDLCMemes/1945/include/Components"
 				}
 			],
 			"language" : "C",
@@ -101,7 +101,11 @@
 				8,
 				9,
 				10,
-				11
+				11,
+				12,
+				13,
+				14,
+				15
 			]
 		}
 	],
@@ -117,11 +121,11 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /W3 /MD /O1 /Ob1 /DNDEBUG",
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /MD /Zi /O2 /Ob1 /DNDEBUG",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "/machine:x64 /INCREMENTAL:NO /subsystem:console",
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
 				"role" : "flags"
 			},
 			{
@@ -155,17 +159,17 @@
 				8,
 				9,
 				10,
-				11
+				11,
+				12,
+				13,
+				14,
+				15
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				12,
-				13,
-				14,
-				15,
 				16,
 				17,
 				18,
@@ -174,7 +178,15 @@
 				21,
 				22,
 				23,
-				24
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32
 			]
 		}
 	],
@@ -196,6 +208,30 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/Collections/aiv-vector.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Components/bullet_behaviour_component.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Components/player_movement_component.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Components/player_shooting_component.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Components/test_component.c",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -274,12 +310,32 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "include/Engine/animator.h",
+			"path" : "include/Components/bullet_behaviour_component.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "include/Engine/component-factory.h",
+			"path" : "include/Components/component-factory.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/Components/player_movement_component.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/Components/player_shooting_component.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/Components/test_component.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/Engine/animator.h",
 			"sourceGroupIndex" : 1
 		},
 		{
