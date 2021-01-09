@@ -407,6 +407,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Collections\aiv-dictionary.c" />
     <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Collections\aiv-list.c" />
     <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Collections\aiv-vector.c" />
+    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\background_component.c" />
     <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\bullet_behaviour_component.c" />
     <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\player_movement_component.c" />
     <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\player_shooting_component.c" />
@@ -424,6 +425,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Collections\aiv-dictionary.h" />
     <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Collections\aiv-list.h" />
     <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Collections\aiv-vector.h" />
+    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\background_component.h" />
     <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\bullet_behaviour_component.h" />
     <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\component-factory.h" />
     <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\player_movement_component.h" />

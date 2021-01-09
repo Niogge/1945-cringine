@@ -11,6 +11,7 @@ Texture * textest;
 void LoadMedia(Game* g){
     textest = load_texture("resources/player_plane.png", "player" ,65,65);
     textest = load_texture("resources/bullet.png", "bullet" ,32,32);
+    textest = load_texture("resources/water.png", "water" ,188,192);
 }
 void scene1_ctor(scene* s){
     GameObject* go = new_gameobject(vec2_new(30.f,30.f), get_texture("player"));
@@ -63,6 +64,26 @@ void scene1_ctor(scene* s){
 
     add_scene_object(s, bullet_go);
 
+
+
+    ///BACKGROUND STUFF
+    GameObject* bg1 = new_gameobject_layer(vec2_new(0,0), get_texture("water"), BACKEST);
+    bg1->pivot = vec2_new(0,0);
+    bg1->texture->renderQuad->w = s->game->width;
+    bg1->texture->renderQuad->h = s->game->height+10;
+    component* FilippoMariaPerlini = new_background_component(vec2_new(0.f,-s->game->height),vec2_new(0.f,s->game->height),50.f);
+    FilippoMariaPerlini->init(FilippoMariaPerlini);
+    attach_component(bg1,FilippoMariaPerlini);
+    add_scene_object(s,bg1);
+    GameObject* bg2 = new_gameobject_layer(vec2_new(0,0), get_texture("water"), BACKEST);
+    bg2->pivot = vec2_new(0,0);
+    bg2->texture->renderQuad->w = s->game->width;
+    bg2->texture->renderQuad->h = s->game->height+10;
+    bg2->position.y = -s->game->height;
+    component* EnricoMariaPerlini = new_background_component(vec2_new(0.f,-s->game->height),vec2_new(0.f,s->game->height),50.f);
+    EnricoMariaPerlini->init(EnricoMariaPerlini);
+    attach_component(bg2,EnricoMariaPerlini);
+    add_scene_object(s,bg2);
     //go2->active = false;
 
 }
