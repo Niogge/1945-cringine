@@ -12,9 +12,13 @@ void LoadMedia(Game* g){
     textest = load_texture("resources/player_plane.png", "player" ,65,65);
     textest = load_texture("resources/bullet.png", "bullet" ,32,32);
     textest = load_texture("resources/water.png", "water" ,188,192);
+    textest = load_texture("resources/enemy1_strip3.png", "Enemy_1" ,32,32);
+    textest = load_texture("resources/enemy2_strip3.png", "Enemy_2" ,32,32);
+    textest = load_texture("resources/enemy3_strip3.png", "Enemy_3" ,32,32);
+    textest = load_texture("resources/enemybullet1.png", "enemy_bullet" ,32,32);
 }
 void scene1_ctor(scene* s){
-    GameObject* go = new_gameobject(vec2_new(30.f,30.f), get_texture("player"));
+    GameObject* go = new_gameobject(vec2_new(320.f,200.f), get_texture("player"));
     rigidbody* rbody = new_rb_with_collider(vec2_new(0,0),vec2_new(65,65));
     rbody->direction= vec2_new(1,0);
     rbody->speed = 0;
@@ -22,7 +26,7 @@ void scene1_ctor(scene* s){
     rbody->mask_self = PLAYER_MASK;
     attach_rigidbody(go,rbody);
     Animator* anim = new_animator();
-    Clip* clip = new_clip(vec2_new(0,0), vec2_new(2,0), 65,65,30);
+    Clip* clip = new_clip(vec2_new(0,0), vec2_new(2,0), 65,65,3);
     add_clip(anim,clip);
     set_animator(go,anim);
 
@@ -36,35 +40,12 @@ void scene1_ctor(scene* s){
 
     add_scene_object(s,go);
 
-    GameObject* go2 = new_gameobject_layer(vec2_new(180.f,30.f), get_texture("player"), BACK);
-    rigidbody* rbody2 = new_rb_with_collider(vec2_new(0,0),vec2_new(65,65));
-    rbody2->direction= vec2_new(1,0);
-    rbody2->speed = 0;
-    rbody2->collision_mask = PLAYER_MASK|BULLET_MASK;
-    rbody2->mask_self = ENEMY_MASK;
-    attach_rigidbody(go2, rbody2);
-    Animator* anim2 = new_animator();
-    Clip* clip2 = new_clip(vec2_new(0,0), vec2_new(2,0), 65,65,30);
-    add_clip(anim2,clip2);
-    set_animator(go2,anim2);
-
-    add_scene_object(s,go2);
-
-    GameObject* bullet_go = new_gameobject(vec2_new(180.f,180.f), get_texture( "bullet"));
-    rigidbody* bullet_rigidbody = new_rb_with_collider(bullet_go->position, vec2_new(32,32));
-    bullet_rigidbody->direction = vec2_new(0,0);
-    bullet_rigidbody->speed=0;
-    bullet_rigidbody->collision_mask = ENEMY_MASK | PLAYER_MASK;
-    bullet_rigidbody->mask_self = BULLET_MASK;
-    attach_rigidbody(bullet_go, bullet_rigidbody);
-
-    component * bullet_c = new_bullet_behaviour();
-    attach_component(bullet_go, bullet_c);
-    bullet_c->init(bullet_c);
-
-    add_scene_object(s, bullet_go);
-
-
+    //ENEMY_SPAWN
+    GameObject* Enemy_Spawner = new_gameobject_no_texture(vec2_new(0,-100.f));
+    component* spawn = new_enemy_spawner();
+    attach_component(Enemy_Spawner,spawn);
+    spawn->init_scene(spawn, s);
+    add_scene_object(s,Enemy_Spawner);
 
     ///BACKGROUND STUFF
     GameObject* bg1 = new_gameobject_layer(vec2_new(0,0), get_texture("water"), BACKEST);

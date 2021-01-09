@@ -50,8 +50,8 @@ void update_gameobject(GameObject* go, float delta_time){
             }
         }
 
+        aiv_vector_foreach_dt(go->components, updater, delta_time);
     }
-    aiv_vector_foreach_dt(go->components, updater, delta_time);
 }
 
 void collision_handle(GameObject* go, GameObject* other){

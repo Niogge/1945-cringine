@@ -16,6 +16,12 @@
     <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\bullet_behaviour_component.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\enemy_behaviour_component.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\enemy_spawn_component.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\player_movement_component.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -73,6 +79,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\component-factory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\enemy_behaviour_component.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\enemy_spawn_component.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\player_movement_component.h">

@@ -6,12 +6,12 @@
 
 GameObject* bullet_factory(scene * s){
     GameObject* bullet_go = new_gameobject(vec2_new(180.f,180.f), get_texture( "bullet"));
-    rigidbody* bullet_rigidbody = new_rb_with_collider(bullet_go->position, vec2_new(32,32));
-    bullet_rigidbody->collision_mask = ENEMY_MASK | PLAYER_MASK;
+    rigidbody* bullet_rigidbody = new_rb_with_collider(bullet_go->position, vec2_new(15,15));
+    bullet_rigidbody->collision_mask = ENEMY_MASK | PLAYER_MASK | BULLET_MASK;
     bullet_rigidbody->mask_self = BULLET_MASK;
     attach_rigidbody(bullet_go, bullet_rigidbody);
 
-    component * bullet_c = new_bullet_behaviour();
+    component * bullet_c = new_bullet_behaviour(vec2_new(0,-1),300);
     attach_component(bullet_go, bullet_c);
     bullet_c->init(bullet_c);
 
@@ -50,6 +50,12 @@ void player_shooting_update(component* self,float dt){
     }
 }
 void player_shooting_destructor(component* self){
+    for (int i = 0; i < ((shooting_data*)self->data)->pool->__count; i++)
+    {
+        destroy_gameobject(((shooting_data*)self->data)->pool->__items[i]);
+    }
+    aiv_vector_destroy(((shooting_data*)self->data)->pool);
+    free(self->data);
     free(self);
 }
 

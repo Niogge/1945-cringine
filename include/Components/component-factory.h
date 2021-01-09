@@ -5,4 +5,6 @@
 #include "bullet_behaviour_component.h"
 #include "player_shooting_component.h"
 #include "background_component.h"
+#include "enemy_spawn_component.h"
+#include "enemy_behaviour_component.h"
 #endif

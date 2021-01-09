@@ -9,7 +9,7 @@ The output was:
 Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 09/01/2021 01:38:47.
+Build started 09/01/2021 20:52:24.
 Project "E:\AIV\SDLCMemes\1945\build\CMakeFiles\3.14.0\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
 PrepareForBuild:
   Creating directory "Debug\".
@@ -43,7 +43,7 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.27
+Time Elapsed 00:00:01.36
 
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -55,33 +55,33 @@ The C compiler identification is MSVC, found in "E:/AIV/SDLCMemes/1945/build/CMa
 Determining if the C compiler works passed with the following output:
 Change Dir: E:/AIV/SDLCMemes/1945/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):G:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_d9bc1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Run Build Command(s):G:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_6275c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
 Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
   Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27031.1 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /I"E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d9bc1.dir\Debug\\" /Fd"cmTC_d9bc1.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue E:\AIV\SDLCMemes\1945\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  cl /c /I"E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6275c.dir\Debug\\" /Fd"cmTC_6275c.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue E:\AIV\SDLCMemes\1945\build\CMakeFiles\CMakeTmp\testCCompiler.c
   testCCompiler.c
   
-  cmTC_d9bc1.vcxproj -> E:\AIV\SDLCMemes\1945\build\CMakeFiles\CMakeTmp\Debug\cmTC_d9bc1.exe
+  cmTC_6275c.vcxproj -> E:\AIV\SDLCMemes\1945\build\CMakeFiles\CMakeTmp\Debug\cmTC_6275c.exe
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: E:/AIV/SDLCMemes/1945/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):G:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_cf0a2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Run Build Command(s):G:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_d483f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
 Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
   Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27031.1 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /I"E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cf0a2.dir\Debug\\" /Fd"cmTC_cf0a2.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c"
+  cl /c /I"E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d483f.dir\Debug\\" /Fd"cmTC_d483f.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c"
   CMakeCCompilerABI.c
   
-  cmTC_cf0a2.vcxproj -> E:\AIV\SDLCMemes\1945\build\CMakeFiles\CMakeTmp\Debug\cmTC_cf0a2.exe
+  cmTC_d483f.vcxproj -> E:\AIV\SDLCMemes\1945\build\CMakeFiles\CMakeTmp\Debug\cmTC_d483f.exe
 
 
 
@@ -89,17 +89,17 @@ Copyright (C) Microsoft Corporation. All rights reserved.
 Detecting C [] compiler features compiled with the following output:
 Change Dir: E:/AIV/SDLCMemes/1945/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):G:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_64133.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Run Build Command(s):G:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_886d4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
 Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
   Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27031.1 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /I"E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_64133.dir\Debug\\" /Fd"cmTC_64133.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue E:\AIV\SDLCMemes\1945\build\CMakeFiles\feature_tests.c
+  cl /c /I"E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_886d4.dir\Debug\\" /Fd"cmTC_886d4.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue E:\AIV\SDLCMemes\1945\build\CMakeFiles\feature_tests.c
   feature_tests.c
   
-  cmTC_64133.vcxproj -> E:\AIV\SDLCMemes\1945\build\CMakeFiles\CMakeTmp\Debug\cmTC_64133.exe
+  cmTC_886d4.vcxproj -> E:\AIV\SDLCMemes\1945\build\CMakeFiles\CMakeTmp\Debug\cmTC_886d4.exe
 
 
     Feature record: C_FEATURE:1c_function_prototypes
