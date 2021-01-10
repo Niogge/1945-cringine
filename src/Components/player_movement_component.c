@@ -65,6 +65,9 @@ void player_death(GameObject* go){
     set_animator(expl,anim);
     add_scene_object(current_scene(), expl);
 
+
+    play_chunk(-1,1,1);
+
 }
 void player_movement_collision(component* self, GameObject* other){
     // self->owner->position = ((movement_data*)self->data)->last_pos;

@@ -44,6 +44,7 @@ void player_shooting_update(component* self,float dt){
             aiv_vector_add(((shooting_data*)self->data)->pool, bullet);
             ((shooting_data*)self->data)->shootCD_elapsed = 0;
              ((shooting_data*)self->data)->shoot_offset.x *= -1;
+            play_chunk(-1,0,1);
         }
     }
     else{

@@ -9,8 +9,8 @@ The output was:
 Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 10/01/2021 17:26:32.
-Project "E:\AIV\SDLCMemes\1945\build\CMakeFiles\3.14.0\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
+Build started 10/01/2021 21:02:48.
+Project "E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\3.14.0\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
 PrepareForBuild:
   Creating directory "Debug\".
   Creating directory "Debug\CompilerIdC.tlog\".
@@ -23,13 +23,13 @@ ClCompile:
   CMakeCCompilerId.c
 Link:
   G:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\debug\lib" /LIBPATH:"E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\debug\lib\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\debug\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
-  CompilerIdC.vcxproj -> E:\AIV\SDLCMemes\1945\build\CMakeFiles\3.14.0\CompilerIdC\.\CompilerIdC.exe
+  CompilerIdC.vcxproj -> E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\3.14.0\CompilerIdC\.\CompilerIdC.exe
 AppLocalFromInstalled:
-  pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\applocal.ps1" "E:\AIV\SDLCMemes\1945\build\CMakeFiles\3.14.0\CompilerIdC\.\CompilerIdC.exe" "E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\debug\bin" "Debug\CompilerIdC.tlog\CompilerIdC.write.1u.tlog" "Debug\vcpkg.applocal.log"
+  pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\applocal.ps1" "E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\3.14.0\CompilerIdC\.\CompilerIdC.exe" "E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\debug\bin" "Debug\CompilerIdC.tlog\CompilerIdC.write.1u.tlog" "Debug\vcpkg.applocal.log"
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.
-  The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\applocal.ps1" "E:\AIV\SDLCMemes\1945\build\CMakeFiles\3.14.0\CompilerIdC\.\CompilerIdC.exe" "E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\debug\bin" "Debug\CompilerIdC.tlog\CompilerIdC.write.1u.tlog" "Debug\vcpkg.applocal.log"" exited with code 9009.
-  "C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\applocal.ps1" "E:\AIV\SDLCMemes\1945\build\CMakeFiles\3.14.0\CompilerIdC\.\CompilerIdC.exe" "E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\debug\bin" "Debug\CompilerIdC.tlog\CompilerIdC.write.1u.tlog" "Debug\vcpkg.applocal.log"
+  The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\applocal.ps1" "E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\3.14.0\CompilerIdC\.\CompilerIdC.exe" "E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\debug\bin" "Debug\CompilerIdC.tlog\CompilerIdC.write.1u.tlog" "Debug\vcpkg.applocal.log"" exited with code 9009.
+  "C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\applocal.ps1" "E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\3.14.0\CompilerIdC\.\CompilerIdC.exe" "E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\debug\bin" "Debug\CompilerIdC.tlog\CompilerIdC.write.1u.tlog" "Debug\vcpkg.applocal.log"
 PostBuildEvent:
   for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
   :VCEnd
@@ -37,69 +37,69 @@ PostBuildEvent:
 FinalizeBuildStatus:
   Deleting file "Debug\CompilerIdC.tlog\unsuccessfulbuild".
   Touching "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
-Done Building Project "E:\AIV\SDLCMemes\1945\build\CMakeFiles\3.14.0\CompilerIdC\CompilerIdC.vcxproj" (default targets).
+Done Building Project "E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\3.14.0\CompilerIdC\CompilerIdC.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.71
+Time Elapsed 00:00:01.53
 
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
 
-The C compiler identification is MSVC, found in "E:/AIV/SDLCMemes/1945/build/CMakeFiles/3.14.0/CompilerIdC/CompilerIdC.exe"
+The C compiler identification is MSVC, found in "E:/AIV/1945li morti di/1945-cringine/build/CMakeFiles/3.14.0/CompilerIdC/CompilerIdC.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: E:/AIV/SDLCMemes/1945/build/CMakeFiles/CMakeTmp
+Change Dir: E:/AIV/1945li morti di/1945-cringine/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):G:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_0cfa2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Run Build Command(s):G:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_61508.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
 Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
   Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27031.1 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /I"E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0cfa2.dir\Debug\\" /Fd"cmTC_0cfa2.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue E:\AIV\SDLCMemes\1945\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  cl /c /I"E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_61508.dir\Debug\\" /Fd"cmTC_61508.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\CMakeTmp\testCCompiler.c"
   testCCompiler.c
   
-  cmTC_0cfa2.vcxproj -> E:\AIV\SDLCMemes\1945\build\CMakeFiles\CMakeTmp\Debug\cmTC_0cfa2.exe
+  cmTC_61508.vcxproj -> E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\CMakeTmp\Debug\cmTC_61508.exe
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: E:/AIV/SDLCMemes/1945/build/CMakeFiles/CMakeTmp
+Change Dir: E:/AIV/1945li morti di/1945-cringine/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):G:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_5cc27.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Run Build Command(s):G:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_0ef67.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
 Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
   Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27031.1 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /I"E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5cc27.dir\Debug\\" /Fd"cmTC_5cc27.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c"
+  cl /c /I"E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0ef67.dir\Debug\\" /Fd"cmTC_0ef67.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c"
   CMakeCCompilerABI.c
   
-  cmTC_5cc27.vcxproj -> E:\AIV\SDLCMemes\1945\build\CMakeFiles\CMakeTmp\Debug\cmTC_5cc27.exe
+  cmTC_0ef67.vcxproj -> E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\CMakeTmp\Debug\cmTC_0ef67.exe
 
 
 
 
 Detecting C [] compiler features compiled with the following output:
-Change Dir: E:/AIV/SDLCMemes/1945/build/CMakeFiles/CMakeTmp
+Change Dir: E:/AIV/1945li morti di/1945-cringine/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):G:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_0e5a1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
+Run Build Command(s):G:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe cmTC_e817f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=15.0 /v:m 
 Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
 Copyright (C) Microsoft Corporation. All rights reserved.
 
   Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27031.1 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /I"E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0e5a1.dir\Debug\\" /Fd"cmTC_0e5a1.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue E:\AIV\SDLCMemes\1945\build\CMakeFiles\feature_tests.c
+  cl /c /I"E:\vsStuff\vcpkg-master\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e817f.dir\Debug\\" /Fd"cmTC_e817f.dir\Debug\vc141.pdb" /Gd /TC /errorReport:queue "E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\feature_tests.c"
   feature_tests.c
   
-  cmTC_0e5a1.vcxproj -> E:\AIV\SDLCMemes\1945\build\CMakeFiles\CMakeTmp\Debug\cmTC_0e5a1.exe
+  cmTC_e817f.vcxproj -> E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\CMakeTmp\Debug\cmTC_e817f.exe
 
 
     Feature record: C_FEATURE:1c_function_prototypes

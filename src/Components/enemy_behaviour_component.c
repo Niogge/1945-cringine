@@ -71,6 +71,8 @@ void enemy_behaviour_component_on_collision(component* self, GameObject* other){
     enemy_behaviour_component_data *data = self->data;
     data->death_particle->position = self->owner->position;
     data->death_particle->active =true;
+
+    play_chunk(-1,1,1);
 }
 component* new_enemy_behaviour_component(){
     component* c = (component* )malloc(sizeof(component));

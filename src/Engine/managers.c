@@ -307,7 +307,7 @@ void destroy_physicsmgr(PhysicsManager* phy ){
 
 ////////////////SCENE MANAGER
 static SceneManager* scene_mgr;
-init_scene_manager(){
+void init_scene_manager(){
     scene_mgr = (SceneManager*)malloc(sizeof(SceneManager));
     scene_mgr->scenes_vector = aiv_vector_new();
     scene_mgr->scene_index = 0;
@@ -336,4 +336,48 @@ void destroy_scene_manager(){
     
     aiv_vector_destroy(scene_mgr->scenes_vector);
     free(scene_mgr);
+}
+
+
+/////// AUDIO MANAGER
+static AudioManager*audio;
+void init_audio_manager(){
+    audio = (AudioManager*)malloc(sizeof(AudioManager));
+    audio->sound = aiv_vector_new();
+    audio->chunks = aiv_vector_new();
+}
+void play_sound(int index, int loop){
+    if(Mix_PlayMusic(aiv_vector_at(audio->sound,index),loop)==-1){
+        printf("Mix_PlayMusic: %s\n",Mix_GetError());
+    }
+}
+void play_chunk(int channel, int index, int loop){
+    if(Mix_PlayChannel(channel, aiv_vector_at(audio->chunks, index),loop)==-1){
+
+        printf("Mix_Playchannel: %s\n",Mix_GetError());
+    }
+}
+void destroy_audio_manager(){
+    for (uint i = 0; i < audio->sound->__count; i++)
+    {
+        Mix_FreeMusic(audio->sound->__items[i]);
+    }
+    aiv_vector_destroy(audio->sound);
+    for (uint i = 0; i < audio->chunks->__count; i++)
+    {
+        Mix_FreeChunk(audio->chunks->__items[i]);
+    }
+    aiv_vector_destroy(audio->chunks);
+    free(audio);
+    
+}
+void add_music(const char * path){
+    Mix_Music* m = Mix_LoadMUS(path);
+    aiv_vector_add(audio->sound,m);
+}
+void add_chunk(const char * path){
+    Mix_Chunk* m = Mix_LoadWAV(path);
+    Mix_VolumeChunk(m,32);
+    aiv_vector_add(audio->chunks,m);
+
 }

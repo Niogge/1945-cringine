@@ -4,11 +4,13 @@
 #include "managers.h"
 #include "aiv-common.h"
 #include <SDL.h>
+#include <SDL_mixer.h>
 
 
 typedef struct{
     SDL_Window* window;
     SDL_Renderer* renderer;
+    Mix_Music *music;
     int width;
     int height; 
 

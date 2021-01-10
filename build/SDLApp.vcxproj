@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{02958110-3ED0-3427-9E59-AEA5B8DFF46B}</ProjectGuid>
+    <ProjectGuid>{271361A1-C62F-3382-B9FF-E65F4684306A}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
@@ -59,25 +59,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\AIV\SDLCMemes\1945\build\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\AIV\1945li morti di\1945-cringine\build\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">SDLApp.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">SDLApp</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\AIV\SDLCMemes\1945\build\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\AIV\1945li morti di\1945-cringine\build\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">SDLApp.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">SDLApp</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\AIV\SDLCMemes\1945\build\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\AIV\1945li morti di\1945-cringine\build\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">SDLApp.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">SDLApp</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\AIV\SDLCMemes\1945\build\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\AIV\1945li morti di\1945-cringine\build\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">SDLApp.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">SDLApp</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\AIV\SDLCMemes\1945\cmake\sdl2\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_image-2.0.5\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_ttf-2.0.15\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_mixer-2.0.4\include;E:\AIV\SDLCMemes\1945\include;E:\AIV\SDLCMemes\1945\include\Engine;E:\AIV\SDLCMemes\1945\include\Math;E:\AIV\SDLCMemes\1945\include\Collections;E:\AIV\SDLCMemes\1945\include\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\AIV\1945li morti di\1945-cringine\cmake\sdl2\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_image-2.0.5\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_ttf-2.0.15\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_mixer-2.0.4\include;E:\AIV\1945li morti di\1945-cringine\include;E:\AIV\1945li morti di\1945-cringine\include\Engine;E:\AIV\1945li morti di\1945-cringine\include\Math;E:\AIV\1945li morti di\1945-cringine\include\Collections;E:\AIV\1945li morti di\1945-cringine\include\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsC</CompileAs>
@@ -104,10 +104,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\AIV\SDLCMemes\1945\cmake\sdl2\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_image-2.0.5\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_ttf-2.0.15\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_mixer-2.0.4\include;E:\AIV\SDLCMemes\1945\include;E:\AIV\SDLCMemes\1945\include\Engine;E:\AIV\SDLCMemes\1945\include\Math;E:\AIV\SDLCMemes\1945\include\Collections;E:\AIV\SDLCMemes\1945\include\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\AIV\1945li morti di\1945-cringine\cmake\sdl2\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_image-2.0.5\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_ttf-2.0.15\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_mixer-2.0.4\include;E:\AIV\1945li morti di\1945-cringine\include;E:\AIV\1945li morti di\1945-cringine\include\Engine;E:\AIV\1945li morti di\1945-cringine\include\Math;E:\AIV\1945li morti di\1945-cringine\include\Collections;E:\AIV\1945li morti di\1945-cringine\include\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\AIV\SDLCMemes\1945\cmake\sdl2\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_image-2.0.5\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_ttf-2.0.15\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_mixer-2.0.4\include;E:\AIV\SDLCMemes\1945\include;E:\AIV\SDLCMemes\1945\include\Engine;E:\AIV\SDLCMemes\1945\include\Math;E:\AIV\SDLCMemes\1945\include\Collections;E:\AIV\SDLCMemes\1945\include\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\AIV\1945li morti di\1945-cringine\cmake\sdl2\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_image-2.0.5\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_ttf-2.0.15\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_mixer-2.0.4\include;E:\AIV\1945li morti di\1945-cringine\include;E:\AIV\1945li morti di\1945-cringine\include\Engine;E:\AIV\1945li morti di\1945-cringine\include\Math;E:\AIV\1945li morti di\1945-cringine\include\Collections;E:\AIV\1945li morti di\1945-cringine\include\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -117,17 +117,21 @@
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different e:/AIV/SDLCMemes/1945/cmake/sdl2/lib/x64/SDL2.dll E:/AIV/SDLCMemes/1945/build/Debug
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/sdl2/lib/x64/SDL2.dll" "E:/AIV/1945li morti di/1945-cringine/build/Debug"
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different e:/AIV/SDLCMemes/1945/cmake/SDL2_image-2.0.5/lib/x64/SDL2_image.dll E:/AIV/SDLCMemes/1945/build/Debug
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_image-2.0.5/lib/x64/SDL2_image.dll" "E:/AIV/1945li morti di/1945-cringine/build/Debug"
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different e:/AIV/SDLCMemes/1945/cmake/SDL2_image-2.0.5/lib/x64/libpng16-16.dll E:/AIV/SDLCMemes/1945/build/Debug
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_image-2.0.5/lib/x64/libpng16-16.dll" "E:/AIV/1945li morti di/1945-cringine/build/Debug"
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different e:/AIV/SDLCMemes/1945/cmake/SDL2_image-2.0.5/lib/x64/libjpeg-9.dll E:/AIV/SDLCMemes/1945/build/Debug
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_image-2.0.5/lib/x64/libjpeg-9.dll" "E:/AIV/1945li morti di/1945-cringine/build/Debug"
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different e:/AIV/SDLCMemes/1945/cmake/SDL2_ttf-2.0.15/lib/x64/SDL2_ttf.dll E:/AIV/SDLCMemes/1945/build/Debug
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_ttf-2.0.15/lib/x64/SDL2_ttf.dll" "E:/AIV/1945li morti di/1945-cringine/build/Debug"
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/AIV/SDLCMemes/1945/resources E:/AIV/SDLCMemes/1945/build/Debug/resources
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/SDL2_mixer.dll" "E:/AIV/1945li morti di/1945-cringine/build/Debug"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/SDL2_mixer.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libFLAC-8.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libmodplug-1.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libmpg123-0.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libogg-0.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libopus-0.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libopusfile-0.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libvorbis-0.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libvorbisfile-3.dll" "E:/AIV/1945li morti di/1945-cringine/build/Debug"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "E:/AIV/1945li morti di/1945-cringine/resources" "E:/AIV/1945li morti di/1945-cringine/build/Debug/resources"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -142,8 +146,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>E:/AIV/SDLCMemes/1945/build/Debug/SDLApp.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/AIV/SDLCMemes/1945/build/Debug/SDLApp.pdb</ProgramDataBaseFile>
+      <ImportLibrary>E:/AIV/1945li morti di/1945-cringine/build/Debug/SDLApp.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/AIV/1945li morti di/1945-cringine/build/Debug/SDLApp.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -152,7 +156,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\AIV\SDLCMemes\1945\cmake\sdl2\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_image-2.0.5\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_ttf-2.0.15\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_mixer-2.0.4\include;E:\AIV\SDLCMemes\1945\include;E:\AIV\SDLCMemes\1945\include\Engine;E:\AIV\SDLCMemes\1945\include\Math;E:\AIV\SDLCMemes\1945\include\Collections;E:\AIV\SDLCMemes\1945\include\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\AIV\1945li morti di\1945-cringine\cmake\sdl2\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_image-2.0.5\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_ttf-2.0.15\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_mixer-2.0.4\include;E:\AIV\1945li morti di\1945-cringine\include;E:\AIV\1945li morti di\1945-cringine\include\Engine;E:\AIV\1945li morti di\1945-cringine\include\Math;E:\AIV\1945li morti di\1945-cringine\include\Collections;E:\AIV\1945li morti di\1945-cringine\include\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
@@ -170,10 +174,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\AIV\SDLCMemes\1945\cmake\sdl2\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_image-2.0.5\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_ttf-2.0.15\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_mixer-2.0.4\include;E:\AIV\SDLCMemes\1945\include;E:\AIV\SDLCMemes\1945\include\Engine;E:\AIV\SDLCMemes\1945\include\Math;E:\AIV\SDLCMemes\1945\include\Collections;E:\AIV\SDLCMemes\1945\include\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\AIV\1945li morti di\1945-cringine\cmake\sdl2\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_image-2.0.5\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_ttf-2.0.15\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_mixer-2.0.4\include;E:\AIV\1945li morti di\1945-cringine\include;E:\AIV\1945li morti di\1945-cringine\include\Engine;E:\AIV\1945li morti di\1945-cringine\include\Math;E:\AIV\1945li morti di\1945-cringine\include\Collections;E:\AIV\1945li morti di\1945-cringine\include\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\AIV\SDLCMemes\1945\cmake\sdl2\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_image-2.0.5\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_ttf-2.0.15\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_mixer-2.0.4\include;E:\AIV\SDLCMemes\1945\include;E:\AIV\SDLCMemes\1945\include\Engine;E:\AIV\SDLCMemes\1945\include\Math;E:\AIV\SDLCMemes\1945\include\Collections;E:\AIV\SDLCMemes\1945\include\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\AIV\1945li morti di\1945-cringine\cmake\sdl2\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_image-2.0.5\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_ttf-2.0.15\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_mixer-2.0.4\include;E:\AIV\1945li morti di\1945-cringine\include;E:\AIV\1945li morti di\1945-cringine\include\Engine;E:\AIV\1945li morti di\1945-cringine\include\Math;E:\AIV\1945li morti di\1945-cringine\include\Collections;E:\AIV\1945li morti di\1945-cringine\include\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -183,17 +187,21 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different e:/AIV/SDLCMemes/1945/cmake/sdl2/lib/x64/SDL2.dll E:/AIV/SDLCMemes/1945/build/Release
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/sdl2/lib/x64/SDL2.dll" "E:/AIV/1945li morti di/1945-cringine/build/Release"
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different e:/AIV/SDLCMemes/1945/cmake/SDL2_image-2.0.5/lib/x64/SDL2_image.dll E:/AIV/SDLCMemes/1945/build/Release
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_image-2.0.5/lib/x64/SDL2_image.dll" "E:/AIV/1945li morti di/1945-cringine/build/Release"
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different e:/AIV/SDLCMemes/1945/cmake/SDL2_image-2.0.5/lib/x64/libpng16-16.dll E:/AIV/SDLCMemes/1945/build/Release
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_image-2.0.5/lib/x64/libpng16-16.dll" "E:/AIV/1945li morti di/1945-cringine/build/Release"
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different e:/AIV/SDLCMemes/1945/cmake/SDL2_image-2.0.5/lib/x64/libjpeg-9.dll E:/AIV/SDLCMemes/1945/build/Release
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_image-2.0.5/lib/x64/libjpeg-9.dll" "E:/AIV/1945li morti di/1945-cringine/build/Release"
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different e:/AIV/SDLCMemes/1945/cmake/SDL2_ttf-2.0.15/lib/x64/SDL2_ttf.dll E:/AIV/SDLCMemes/1945/build/Release
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_ttf-2.0.15/lib/x64/SDL2_ttf.dll" "E:/AIV/1945li morti di/1945-cringine/build/Release"
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/AIV/SDLCMemes/1945/resources E:/AIV/SDLCMemes/1945/build/Release/resources
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/SDL2_mixer.dll" "E:/AIV/1945li morti di/1945-cringine/build/Release"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/SDL2_mixer.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libFLAC-8.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libmodplug-1.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libmpg123-0.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libogg-0.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libopus-0.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libopusfile-0.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libvorbis-0.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libvorbisfile-3.dll" "E:/AIV/1945li morti di/1945-cringine/build/Release"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "E:/AIV/1945li morti di/1945-cringine/resources" "E:/AIV/1945li morti di/1945-cringine/build/Release/resources"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -208,8 +216,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>E:/AIV/SDLCMemes/1945/build/Release/SDLApp.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/AIV/SDLCMemes/1945/build/Release/SDLApp.pdb</ProgramDataBaseFile>
+      <ImportLibrary>E:/AIV/1945li morti di/1945-cringine/build/Release/SDLApp.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/AIV/1945li morti di/1945-cringine/build/Release/SDLApp.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -218,7 +226,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\AIV\SDLCMemes\1945\cmake\sdl2\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_image-2.0.5\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_ttf-2.0.15\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_mixer-2.0.4\include;E:\AIV\SDLCMemes\1945\include;E:\AIV\SDLCMemes\1945\include\Engine;E:\AIV\SDLCMemes\1945\include\Math;E:\AIV\SDLCMemes\1945\include\Collections;E:\AIV\SDLCMemes\1945\include\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\AIV\1945li morti di\1945-cringine\cmake\sdl2\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_image-2.0.5\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_ttf-2.0.15\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_mixer-2.0.4\include;E:\AIV\1945li morti di\1945-cringine\include;E:\AIV\1945li morti di\1945-cringine\include\Engine;E:\AIV\1945li morti di\1945-cringine\include\Math;E:\AIV\1945li morti di\1945-cringine\include\Collections;E:\AIV\1945li morti di\1945-cringine\include\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
@@ -236,10 +244,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\AIV\SDLCMemes\1945\cmake\sdl2\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_image-2.0.5\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_ttf-2.0.15\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_mixer-2.0.4\include;E:\AIV\SDLCMemes\1945\include;E:\AIV\SDLCMemes\1945\include\Engine;E:\AIV\SDLCMemes\1945\include\Math;E:\AIV\SDLCMemes\1945\include\Collections;E:\AIV\SDLCMemes\1945\include\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\AIV\1945li morti di\1945-cringine\cmake\sdl2\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_image-2.0.5\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_ttf-2.0.15\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_mixer-2.0.4\include;E:\AIV\1945li morti di\1945-cringine\include;E:\AIV\1945li morti di\1945-cringine\include\Engine;E:\AIV\1945li morti di\1945-cringine\include\Math;E:\AIV\1945li morti di\1945-cringine\include\Collections;E:\AIV\1945li morti di\1945-cringine\include\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\AIV\SDLCMemes\1945\cmake\sdl2\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_image-2.0.5\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_ttf-2.0.15\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_mixer-2.0.4\include;E:\AIV\SDLCMemes\1945\include;E:\AIV\SDLCMemes\1945\include\Engine;E:\AIV\SDLCMemes\1945\include\Math;E:\AIV\SDLCMemes\1945\include\Collections;E:\AIV\SDLCMemes\1945\include\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\AIV\1945li morti di\1945-cringine\cmake\sdl2\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_image-2.0.5\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_ttf-2.0.15\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_mixer-2.0.4\include;E:\AIV\1945li morti di\1945-cringine\include;E:\AIV\1945li morti di\1945-cringine\include\Engine;E:\AIV\1945li morti di\1945-cringine\include\Math;E:\AIV\1945li morti di\1945-cringine\include\Collections;E:\AIV\1945li morti di\1945-cringine\include\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -249,17 +257,21 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different e:/AIV/SDLCMemes/1945/cmake/sdl2/lib/x64/SDL2.dll E:/AIV/SDLCMemes/1945/build/MinSizeRel
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/sdl2/lib/x64/SDL2.dll" "E:/AIV/1945li morti di/1945-cringine/build/MinSizeRel"
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different e:/AIV/SDLCMemes/1945/cmake/SDL2_image-2.0.5/lib/x64/SDL2_image.dll E:/AIV/SDLCMemes/1945/build/MinSizeRel
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_image-2.0.5/lib/x64/SDL2_image.dll" "E:/AIV/1945li morti di/1945-cringine/build/MinSizeRel"
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different e:/AIV/SDLCMemes/1945/cmake/SDL2_image-2.0.5/lib/x64/libpng16-16.dll E:/AIV/SDLCMemes/1945/build/MinSizeRel
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_image-2.0.5/lib/x64/libpng16-16.dll" "E:/AIV/1945li morti di/1945-cringine/build/MinSizeRel"
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different e:/AIV/SDLCMemes/1945/cmake/SDL2_image-2.0.5/lib/x64/libjpeg-9.dll E:/AIV/SDLCMemes/1945/build/MinSizeRel
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_image-2.0.5/lib/x64/libjpeg-9.dll" "E:/AIV/1945li morti di/1945-cringine/build/MinSizeRel"
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different e:/AIV/SDLCMemes/1945/cmake/SDL2_ttf-2.0.15/lib/x64/SDL2_ttf.dll E:/AIV/SDLCMemes/1945/build/MinSizeRel
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_ttf-2.0.15/lib/x64/SDL2_ttf.dll" "E:/AIV/1945li morti di/1945-cringine/build/MinSizeRel"
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/AIV/SDLCMemes/1945/resources E:/AIV/SDLCMemes/1945/build/MinSizeRel/resources
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/SDL2_mixer.dll" "E:/AIV/1945li morti di/1945-cringine/build/MinSizeRel"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/SDL2_mixer.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libFLAC-8.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libmodplug-1.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libmpg123-0.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libogg-0.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libopus-0.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libopusfile-0.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libvorbis-0.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libvorbisfile-3.dll" "E:/AIV/1945li morti di/1945-cringine/build/MinSizeRel"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "E:/AIV/1945li morti di/1945-cringine/resources" "E:/AIV/1945li morti di/1945-cringine/build/MinSizeRel/resources"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -274,8 +286,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>E:/AIV/SDLCMemes/1945/build/MinSizeRel/SDLApp.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/AIV/SDLCMemes/1945/build/MinSizeRel/SDLApp.pdb</ProgramDataBaseFile>
+      <ImportLibrary>E:/AIV/1945li morti di/1945-cringine/build/MinSizeRel/SDLApp.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/AIV/1945li morti di/1945-cringine/build/MinSizeRel/SDLApp.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -284,7 +296,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\AIV\SDLCMemes\1945\cmake\sdl2\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_image-2.0.5\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_ttf-2.0.15\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_mixer-2.0.4\include;E:\AIV\SDLCMemes\1945\include;E:\AIV\SDLCMemes\1945\include\Engine;E:\AIV\SDLCMemes\1945\include\Math;E:\AIV\SDLCMemes\1945\include\Collections;E:\AIV\SDLCMemes\1945\include\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\AIV\1945li morti di\1945-cringine\cmake\sdl2\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_image-2.0.5\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_ttf-2.0.15\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_mixer-2.0.4\include;E:\AIV\1945li morti di\1945-cringine\include;E:\AIV\1945li morti di\1945-cringine\include\Engine;E:\AIV\1945li morti di\1945-cringine\include\Math;E:\AIV\1945li morti di\1945-cringine\include\Collections;E:\AIV\1945li morti di\1945-cringine\include\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsC</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -301,10 +313,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\AIV\SDLCMemes\1945\cmake\sdl2\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_image-2.0.5\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_ttf-2.0.15\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_mixer-2.0.4\include;E:\AIV\SDLCMemes\1945\include;E:\AIV\SDLCMemes\1945\include\Engine;E:\AIV\SDLCMemes\1945\include\Math;E:\AIV\SDLCMemes\1945\include\Collections;E:\AIV\SDLCMemes\1945\include\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\AIV\1945li morti di\1945-cringine\cmake\sdl2\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_image-2.0.5\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_ttf-2.0.15\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_mixer-2.0.4\include;E:\AIV\1945li morti di\1945-cringine\include;E:\AIV\1945li morti di\1945-cringine\include\Engine;E:\AIV\1945li morti di\1945-cringine\include\Math;E:\AIV\1945li morti di\1945-cringine\include\Collections;E:\AIV\1945li morti di\1945-cringine\include\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\AIV\SDLCMemes\1945\cmake\sdl2\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_image-2.0.5\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_ttf-2.0.15\include;E:\AIV\SDLCMemes\1945\cmake\SDL2_mixer-2.0.4\include;E:\AIV\SDLCMemes\1945\include;E:\AIV\SDLCMemes\1945\include\Engine;E:\AIV\SDLCMemes\1945\include\Math;E:\AIV\SDLCMemes\1945\include\Collections;E:\AIV\SDLCMemes\1945\include\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\AIV\1945li morti di\1945-cringine\cmake\sdl2\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_image-2.0.5\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_ttf-2.0.15\include;E:\AIV\1945li morti di\1945-cringine\cmake\SDL2_mixer-2.0.4\include;E:\AIV\1945li morti di\1945-cringine\include;E:\AIV\1945li morti di\1945-cringine\include\Engine;E:\AIV\1945li morti di\1945-cringine\include\Math;E:\AIV\1945li morti di\1945-cringine\include\Collections;E:\AIV\1945li morti di\1945-cringine\include\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -314,17 +326,21 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different e:/AIV/SDLCMemes/1945/cmake/sdl2/lib/x64/SDL2.dll E:/AIV/SDLCMemes/1945/build/RelWithDebInfo
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/sdl2/lib/x64/SDL2.dll" "E:/AIV/1945li morti di/1945-cringine/build/RelWithDebInfo"
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different e:/AIV/SDLCMemes/1945/cmake/SDL2_image-2.0.5/lib/x64/SDL2_image.dll E:/AIV/SDLCMemes/1945/build/RelWithDebInfo
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_image-2.0.5/lib/x64/SDL2_image.dll" "E:/AIV/1945li morti di/1945-cringine/build/RelWithDebInfo"
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different e:/AIV/SDLCMemes/1945/cmake/SDL2_image-2.0.5/lib/x64/libpng16-16.dll E:/AIV/SDLCMemes/1945/build/RelWithDebInfo
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_image-2.0.5/lib/x64/libpng16-16.dll" "E:/AIV/1945li morti di/1945-cringine/build/RelWithDebInfo"
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different e:/AIV/SDLCMemes/1945/cmake/SDL2_image-2.0.5/lib/x64/libjpeg-9.dll E:/AIV/SDLCMemes/1945/build/RelWithDebInfo
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_image-2.0.5/lib/x64/libjpeg-9.dll" "E:/AIV/1945li morti di/1945-cringine/build/RelWithDebInfo"
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different e:/AIV/SDLCMemes/1945/cmake/SDL2_ttf-2.0.15/lib/x64/SDL2_ttf.dll E:/AIV/SDLCMemes/1945/build/RelWithDebInfo
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_ttf-2.0.15/lib/x64/SDL2_ttf.dll" "E:/AIV/1945li morti di/1945-cringine/build/RelWithDebInfo"
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/AIV/SDLCMemes/1945/resources E:/AIV/SDLCMemes/1945/build/RelWithDebInfo/resources
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/SDL2_mixer.dll" "E:/AIV/1945li morti di/1945-cringine/build/RelWithDebInfo"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/SDL2_mixer.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libFLAC-8.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libmodplug-1.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libmpg123-0.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libogg-0.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libopus-0.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libopusfile-0.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libvorbis-0.dll" "e:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/lib/x64/libvorbisfile-3.dll" "E:/AIV/1945li morti di/1945-cringine/build/RelWithDebInfo"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory "E:/AIV/1945li morti di/1945-cringine/resources" "E:/AIV/1945li morti di/1945-cringine/build/RelWithDebInfo/resources"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -339,8 +355,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>E:/AIV/SDLCMemes/1945/build/RelWithDebInfo/SDLApp.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/AIV/SDLCMemes/1945/build/RelWithDebInfo/SDLApp.pdb</ProgramDataBaseFile>
+      <ImportLibrary>E:/AIV/1945li morti di/1945-cringine/build/RelWithDebInfo/SDLApp.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/AIV/1945li morti di/1945-cringine/build/RelWithDebInfo/SDLApp.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -348,10 +364,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="E:\AIV\SDLCMemes\1945\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/AIV/SDLCMemes/1945/CMakeLists.txt</Message>
+    <CustomBuild Include="E:\AIV\1945li morti di\1945-cringine\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/AIV/1945li morti di/1945-cringine/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SE:/AIV/SDLCMemes/1945 -BE:/AIV/SDLCMemes/1945/build --check-stamp-file E:/AIV/SDLCMemes/1945/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SE:/AIV/1945li morti di/1945-cringine" "-BE:/AIV/1945li morti di/1945-cringine/build" --check-stamp-file "E:/AIV/1945li morti di/1945-cringine/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -359,12 +375,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/AIV/SDLCMemes/1945/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;E:\AIV\SDLCMemes\1945\CMakeLists.txt;E:\AIV\SDLCMemes\1945\build\CMakeFiles\3.14.0\CMakeCCompiler.cmake;E:\AIV\SDLCMemes\1945\build\CMakeFiles\3.14.0\CMakeRCCompiler.cmake;E:\AIV\SDLCMemes\1945\build\CMakeFiles\3.14.0\CMakeSystem.cmake;E:\AIV\SDLCMemes\1945\cmake\FindSDL2.cmake;E:\AIV\SDLCMemes\1945\cmake\FindSDL2TTF.cmake;E:\AIV\SDLCMemes\1945\cmake\FindSDL2_Image.cmake;E:\AIV\SDLCMemes\1945\cmake\FindSDL2_mixer.cmake;E:\AIV\SDLCMemes\1945\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\AIV\SDLCMemes\1945\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/AIV/1945li morti di/1945-cringine/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;E:\AIV\1945li morti di\1945-cringine\CMakeLists.txt;E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\3.14.0\CMakeCCompiler.cmake;E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\3.14.0\CMakeRCCompiler.cmake;E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\3.14.0\CMakeSystem.cmake;E:\AIV\1945li morti di\1945-cringine\cmake\FindSDL2.cmake;E:\AIV\1945li morti di\1945-cringine\cmake\FindSDL2TTF.cmake;E:\AIV\1945li morti di\1945-cringine\cmake\FindSDL2_Image.cmake;E:\AIV\1945li morti di\1945-cringine\cmake\FindSDL2_mixer.cmake;E:\AIV\1945li morti di\1945-cringine\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/AIV/SDLCMemes/1945/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/AIV/1945li morti di/1945-cringine/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SE:/AIV/SDLCMemes/1945 -BE:/AIV/SDLCMemes/1945/build --check-stamp-file E:/AIV/SDLCMemes/1945/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SE:/AIV/1945li morti di/1945-cringine" "-BE:/AIV/1945li morti di/1945-cringine/build" --check-stamp-file "E:/AIV/1945li morti di/1945-cringine/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -372,12 +388,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/AIV/SDLCMemes/1945/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;E:\AIV\SDLCMemes\1945\CMakeLists.txt;E:\AIV\SDLCMemes\1945\build\CMakeFiles\3.14.0\CMakeCCompiler.cmake;E:\AIV\SDLCMemes\1945\build\CMakeFiles\3.14.0\CMakeRCCompiler.cmake;E:\AIV\SDLCMemes\1945\build\CMakeFiles\3.14.0\CMakeSystem.cmake;E:\AIV\SDLCMemes\1945\cmake\FindSDL2.cmake;E:\AIV\SDLCMemes\1945\cmake\FindSDL2TTF.cmake;E:\AIV\SDLCMemes\1945\cmake\FindSDL2_Image.cmake;E:\AIV\SDLCMemes\1945\cmake\FindSDL2_mixer.cmake;E:\AIV\SDLCMemes\1945\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\AIV\SDLCMemes\1945\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/AIV/1945li morti di/1945-cringine/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;E:\AIV\1945li morti di\1945-cringine\CMakeLists.txt;E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\3.14.0\CMakeCCompiler.cmake;E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\3.14.0\CMakeRCCompiler.cmake;E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\3.14.0\CMakeSystem.cmake;E:\AIV\1945li morti di\1945-cringine\cmake\FindSDL2.cmake;E:\AIV\1945li morti di\1945-cringine\cmake\FindSDL2TTF.cmake;E:\AIV\1945li morti di\1945-cringine\cmake\FindSDL2_Image.cmake;E:\AIV\1945li morti di\1945-cringine\cmake\FindSDL2_mixer.cmake;E:\AIV\1945li morti di\1945-cringine\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/AIV/SDLCMemes/1945/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/AIV/1945li morti di/1945-cringine/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SE:/AIV/SDLCMemes/1945 -BE:/AIV/SDLCMemes/1945/build --check-stamp-file E:/AIV/SDLCMemes/1945/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SE:/AIV/1945li morti di/1945-cringine" "-BE:/AIV/1945li morti di/1945-cringine/build" --check-stamp-file "E:/AIV/1945li morti di/1945-cringine/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -385,12 +401,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/AIV/SDLCMemes/1945/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;E:\AIV\SDLCMemes\1945\CMakeLists.txt;E:\AIV\SDLCMemes\1945\build\CMakeFiles\3.14.0\CMakeCCompiler.cmake;E:\AIV\SDLCMemes\1945\build\CMakeFiles\3.14.0\CMakeRCCompiler.cmake;E:\AIV\SDLCMemes\1945\build\CMakeFiles\3.14.0\CMakeSystem.cmake;E:\AIV\SDLCMemes\1945\cmake\FindSDL2.cmake;E:\AIV\SDLCMemes\1945\cmake\FindSDL2TTF.cmake;E:\AIV\SDLCMemes\1945\cmake\FindSDL2_Image.cmake;E:\AIV\SDLCMemes\1945\cmake\FindSDL2_mixer.cmake;E:\AIV\SDLCMemes\1945\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\AIV\SDLCMemes\1945\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/AIV/1945li morti di/1945-cringine/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;E:\AIV\1945li morti di\1945-cringine\CMakeLists.txt;E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\3.14.0\CMakeCCompiler.cmake;E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\3.14.0\CMakeRCCompiler.cmake;E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\3.14.0\CMakeSystem.cmake;E:\AIV\1945li morti di\1945-cringine\cmake\FindSDL2.cmake;E:\AIV\1945li morti di\1945-cringine\cmake\FindSDL2TTF.cmake;E:\AIV\1945li morti di\1945-cringine\cmake\FindSDL2_Image.cmake;E:\AIV\1945li morti di\1945-cringine\cmake\FindSDL2_mixer.cmake;E:\AIV\1945li morti di\1945-cringine\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/AIV/SDLCMemes/1945/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/AIV/1945li morti di/1945-cringine/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SE:/AIV/SDLCMemes/1945 -BE:/AIV/SDLCMemes/1945/build --check-stamp-file E:/AIV/SDLCMemes/1945/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SE:/AIV/1945li morti di/1945-cringine" "-BE:/AIV/1945li morti di/1945-cringine/build" --check-stamp-file "E:/AIV/1945li morti di/1945-cringine/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -398,57 +414,57 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/AIV/SDLCMemes/1945/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;E:\AIV\SDLCMemes\1945\CMakeLists.txt;E:\AIV\SDLCMemes\1945\build\CMakeFiles\3.14.0\CMakeCCompiler.cmake;E:\AIV\SDLCMemes\1945\build\CMakeFiles\3.14.0\CMakeRCCompiler.cmake;E:\AIV\SDLCMemes\1945\build\CMakeFiles\3.14.0\CMakeSystem.cmake;E:\AIV\SDLCMemes\1945\cmake\FindSDL2.cmake;E:\AIV\SDLCMemes\1945\cmake\FindSDL2TTF.cmake;E:\AIV\SDLCMemes\1945\cmake\FindSDL2_Image.cmake;E:\AIV\SDLCMemes\1945\cmake\FindSDL2_mixer.cmake;E:\AIV\SDLCMemes\1945\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\AIV\SDLCMemes\1945\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/AIV/1945li morti di/1945-cringine/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;E:\AIV\1945li morti di\1945-cringine\CMakeLists.txt;E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\3.14.0\CMakeCCompiler.cmake;E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\3.14.0\CMakeRCCompiler.cmake;E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\3.14.0\CMakeSystem.cmake;E:\AIV\1945li morti di\1945-cringine\cmake\FindSDL2.cmake;E:\AIV\1945li morti di\1945-cringine\cmake\FindSDL2TTF.cmake;E:\AIV\1945li morti di\1945-cringine\cmake\FindSDL2_Image.cmake;E:\AIV\1945li morti di\1945-cringine\cmake\FindSDL2_mixer.cmake;E:\AIV\1945li morti di\1945-cringine\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\AIV\1945li morti di\1945-cringine\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Collections\aiv-dictionary.c" />
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Collections\aiv-list.c" />
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Collections\aiv-vector.c" />
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\background_component.c" />
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\bullet_behaviour_component.c" />
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\enemy_behaviour_component.c" />
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\enemy_spawn_component.c" />
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\lives_handler_component.c" />
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\player_movement_component.c" />
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\player_shooting_component.c" />
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\test_component.c" />
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Engine\animator.c" />
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Engine\game.c" />
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Engine\gameObject.c" />
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Engine\managers.c" />
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Engine\rigidbody.c" />
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Engine\scene.c" />
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Engine\sprite.c" />
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Math\vec2.c" />
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\main.c" />
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Collections\aiv-common.h" />
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Collections\aiv-dictionary.h" />
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Collections\aiv-list.h" />
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Collections\aiv-vector.h" />
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\background_component.h" />
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\bullet_behaviour_component.h" />
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\component-factory.h" />
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\enemy_behaviour_component.h" />
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\enemy_spawn_component.h" />
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\lives_handler_component.h" />
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\player_movement_component.h" />
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\player_shooting_component.h" />
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\test_component.h" />
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\animator.h" />
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\game.h" />
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\gameObject.h" />
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\managers.h" />
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\rigidbody.h" />
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\scene.h" />
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\sprite.h" />
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Math\vec2.h" />
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Collections\aiv-dictionary.c" />
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Collections\aiv-list.c" />
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Collections\aiv-vector.c" />
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Components\background_component.c" />
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Components\bullet_behaviour_component.c" />
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Components\enemy_behaviour_component.c" />
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Components\enemy_spawn_component.c" />
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Components\lives_handler_component.c" />
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Components\player_movement_component.c" />
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Components\player_shooting_component.c" />
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Components\test_component.c" />
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Engine\animator.c" />
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Engine\game.c" />
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Engine\gameObject.c" />
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Engine\managers.c" />
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Engine\rigidbody.c" />
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Engine\scene.c" />
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Engine\sprite.c" />
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Math\vec2.c" />
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\main.c" />
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Collections\aiv-common.h" />
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Collections\aiv-dictionary.h" />
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Collections\aiv-list.h" />
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Collections\aiv-vector.h" />
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\background_component.h" />
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\bullet_behaviour_component.h" />
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\component-factory.h" />
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\enemy_behaviour_component.h" />
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\enemy_spawn_component.h" />
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\lives_handler_component.h" />
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\player_movement_component.h" />
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\player_shooting_component.h" />
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\test_component.h" />
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Engine\animator.h" />
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Engine\game.h" />
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Engine\gameObject.h" />
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Engine\managers.h" />
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Engine\rigidbody.h" />
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Engine\scene.h" />
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Engine\sprite.h" />
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Math\vec2.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="E:\AIV\SDLCMemes\1945\build\ZERO_CHECK.vcxproj">
-      <Project>{EEE96A24-9EC1-3249-8CA8-53AB2CED46C5}</Project>
+    <ProjectReference Include="E:\AIV\1945li morti di\1945-cringine\build\ZERO_CHECK.vcxproj">
+      <Project>{DF536CC8-1F85-367F-9FE8-35C9C8A8CC68}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

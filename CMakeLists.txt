@@ -49,6 +49,9 @@ set(SDL2_IMAGE_DLL ${SDL2_IMAGE_PATH}/lib/x64/SDL2_image.dll)
 set(SDL2_IMAGE_PNG_DLL ${SDL2_IMAGE_PATH}/lib/x64/libpng16-16.dll)
 set(SDL2_IMAGE_JPEG_DLL ${SDL2_IMAGE_PATH}/lib/x64/libjpeg-9.dll)
 set(SDL2_TTF_DLL ${SDL2_TTF_PATH}/lib/x64/SDL2_ttf.dll)
+set(SDL2_MIXER_DLL ${SDL2_MIXER_PATH}/lib/x64/SDL2_mixer.dll)
+file(GLOB MIXER_LIBS ${SDL2_MIXER_PATH}/lib/x64/*.dll)
+
 set(ResourcesPath ${CMAKE_CURRENT_SOURCE_DIR}/resources)
 add_custom_command(TARGET SDLApp POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_if_different ${SDL2_DLL} $<TARGET_FILE_DIR:SDLApp>
@@ -56,5 +59,7 @@ add_custom_command(TARGET SDLApp POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_if_different ${SDL2_IMAGE_PNG_DLL} $<TARGET_FILE_DIR:SDLApp>
     COMMAND ${CMAKE_COMMAND} -E copy_if_different ${SDL2_IMAGE_JPEG_DLL} $<TARGET_FILE_DIR:SDLApp>
     COMMAND ${CMAKE_COMMAND} -E copy_if_different ${SDL2_TTF_DLL} $<TARGET_FILE_DIR:SDLApp>
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different ${SDL2_MIXER_DLL} $<TARGET_FILE_DIR:SDLApp>
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different ${MIXER_LIBS} $<TARGET_FILE_DIR:SDLApp>
     COMMAND ${CMAKE_COMMAND} -E copy_directory ${ResourcesPath} $<TARGET_FILE_DIR:SDLApp>/resources
 )

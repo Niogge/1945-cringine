@@ -49,14 +49,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "SDLApp::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-SDLApp-Debug-0d9a91856cf3cb911010.json",
+					"jsonFile" : "target-SDLApp-Debug-9b8484a1f10a1450966b.json",
 					"name" : "SDLApp",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ZERO_CHECK-Debug-f324d36f7bcf2adddb59.json",
+					"jsonFile" : "target-ZERO_CHECK-Debug-03616fcfd3f9b32fd1f8.json",
 					"name" : "ZERO_CHECK",
 					"projectIndex" : 0
 				}
@@ -110,14 +110,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "SDLApp::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-SDLApp-Release-ffa3b134d337b4558f71.json",
+					"jsonFile" : "target-SDLApp-Release-0c753e6c872a825e5da7.json",
 					"name" : "SDLApp",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ZERO_CHECK-Release-f324d36f7bcf2adddb59.json",
+					"jsonFile" : "target-ZERO_CHECK-Release-03616fcfd3f9b32fd1f8.json",
 					"name" : "ZERO_CHECK",
 					"projectIndex" : 0
 				}
@@ -171,14 +171,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "SDLApp::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-SDLApp-MinSizeRel-6a2100eedfa8c97ce68e.json",
+					"jsonFile" : "target-SDLApp-MinSizeRel-5119031f5d44e784c82d.json",
 					"name" : "SDLApp",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-f324d36f7bcf2adddb59.json",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-03616fcfd3f9b32fd1f8.json",
 					"name" : "ZERO_CHECK",
 					"projectIndex" : 0
 				}
@@ -232,14 +232,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "SDLApp::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-SDLApp-RelWithDebInfo-204f1f21be94cb6363fe.json",
+					"jsonFile" : "target-SDLApp-RelWithDebInfo-a5fb94795696a00cee4e.json",
 					"name" : "SDLApp",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-f324d36f7bcf2adddb59.json",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-03616fcfd3f9b32fd1f8.json",
 					"name" : "ZERO_CHECK",
 					"projectIndex" : 0
 				}
@@ -249,8 +249,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "E:/AIV/SDLCMemes/1945/build",
-		"source" : "E:/AIV/SDLCMemes/1945"
+		"build" : "E:/AIV/1945li morti di/1945-cringine/build",
+		"source" : "E:/AIV/1945li morti di/1945-cringine"
 	},
 	"version" : 
 	{

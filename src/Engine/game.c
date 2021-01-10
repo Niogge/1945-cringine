@@ -20,6 +20,10 @@ void LoadMedia(){
     load_texture("resources/explosion.png", "explosion" ,65,65);
     load_texture("resources/bottom.png", "bottomUI" ,640,76);
     load_texture("resources/life.png", "life" ,32,32);
+
+    add_music("resources/background.mp3");
+    add_chunk("resources/snd_explosion1.wav");
+    add_chunk("resources/snd_explosion2.wav");
 }
 void scene1_ctor(scene* s){
     GameObject* go = new_gameobject(vec2_new(320.f,200.f), get_texture("player"));
@@ -100,7 +104,7 @@ Game* game_new(int w, int h, const char * name){
     g->width = w;
     g->height = h;
 
-    SDL_Init(SDL_INIT_VIDEO);
+    SDL_Init(SDL_INIT_VIDEO|SDL_INIT_AUDIO);
     g->window = SDL_CreateWindow(
         name,
         SDL_WINDOWPOS_CENTERED,
@@ -129,6 +133,19 @@ Game* game_new(int w, int h, const char * name){
         printf("IMG_Init: %s\n", IMG_GetError());
         // handle error
     }
+    int result = 0;
+    int flags_mixer = MIX_INIT_MP3;
+
+    if (flags_mixer != (result = Mix_Init(flags_mixer))) {
+        printf("Could not initialize mixer (result: %d).\n", result);
+        printf("Mix_Init: %s\n", Mix_GetError());
+        exit(1);
+    }
+
+    Mix_OpenAudio(22050, AUDIO_S16SYS, 2, 640);
+    Mix_AllocateChannels(16);
+
+    init_audio_manager();
     init_gfxmgr(g->renderer);
     init_inputmgr();
     init_scene_manager();
@@ -141,11 +158,19 @@ Game* game_new(int w, int h, const char * name){
     register_scene(second_scene);
 
 
+
     return g;
 }
 
 
 void game_end(Game* game){
+
+    destroy_audio_manager();
+    printf("audio mgr destroyed \n");
+
+    Mix_Quit();
+    printf("mixer quit");
+
     destroy_inputmgr();
     printf("input mgr destroyed \n");
     destroy_scene_manager();
@@ -173,6 +198,10 @@ void game_loop(Game* game){
     int close = 1;
     float speed = 1.f;
     float timer2= 0.f;
+
+
+    play_sound(0,1);
+
     SDL_Event* event = (SDL_Event*)malloc(sizeof(SDL_Event));
     while(close){
         last_count = current_count;
@@ -197,7 +226,6 @@ void game_loop(Game* game){
             SDL_SetWindowTitle(game->window, title);
             timer-= 1.f;
         }*/
-
         SDL_RenderClear(game->renderer);
         // update(game->updMgr, delta_time);
         // draw(game->drawMgr);

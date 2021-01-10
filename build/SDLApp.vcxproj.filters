@@ -1,141 +1,141 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Collections\aiv-dictionary.c">
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Collections\aiv-dictionary.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Collections\aiv-list.c">
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Collections\aiv-list.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Collections\aiv-vector.c">
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Collections\aiv-vector.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\background_component.c">
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Components\background_component.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\bullet_behaviour_component.c">
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Components\bullet_behaviour_component.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\enemy_behaviour_component.c">
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Components\enemy_behaviour_component.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\enemy_spawn_component.c">
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Components\enemy_spawn_component.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\lives_handler_component.c">
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Components\lives_handler_component.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\player_movement_component.c">
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Components\player_movement_component.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\player_shooting_component.c">
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Components\player_shooting_component.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Components\test_component.c">
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Components\test_component.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Engine\animator.c">
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Engine\animator.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Engine\game.c">
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Engine\game.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Engine\gameObject.c">
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Engine\gameObject.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Engine\managers.c">
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Engine\managers.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Engine\rigidbody.c">
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Engine\rigidbody.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Engine\scene.c">
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Engine\scene.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Engine\sprite.c">
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Engine\sprite.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\Math\vec2.c">
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\Math\vec2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\AIV\SDLCMemes\1945\src\main.c">
+    <ClCompile Include="E:\AIV\1945li morti di\1945-cringine\src\main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Collections\aiv-common.h">
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Collections\aiv-common.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Collections\aiv-dictionary.h">
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Collections\aiv-dictionary.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Collections\aiv-list.h">
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Collections\aiv-list.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Collections\aiv-vector.h">
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Collections\aiv-vector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\background_component.h">
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\background_component.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\bullet_behaviour_component.h">
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\bullet_behaviour_component.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\component-factory.h">
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\component-factory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\enemy_behaviour_component.h">
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\enemy_behaviour_component.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\enemy_spawn_component.h">
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\enemy_spawn_component.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\lives_handler_component.h">
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\lives_handler_component.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\player_movement_component.h">
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\player_movement_component.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\player_shooting_component.h">
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\player_shooting_component.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Components\test_component.h">
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\test_component.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\animator.h">
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Engine\animator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\game.h">
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Engine\game.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\gameObject.h">
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Engine\gameObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\managers.h">
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Engine\managers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\rigidbody.h">
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Engine\rigidbody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\scene.h">
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Engine\scene.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Engine\sprite.h">
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Engine\sprite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\AIV\SDLCMemes\1945\include\Math\vec2.h">
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Math\vec2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="E:\AIV\SDLCMemes\1945\CMakeLists.txt" />
+    <CustomBuild Include="E:\AIV\1945li morti di\1945-cringine\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{A5FEAE3B-E814-35D3-B580-8E311E2ADB9C}</UniqueIdentifier>
+      <UniqueIdentifier>{88F6182E-FCF6-36AF-A003-9CFFF9084CCD}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{08E49D9B-2FD2-3182-8EBD-155C3EB4FC36}</UniqueIdentifier>
+      <UniqueIdentifier>{794039F4-919E-3916-BF18-8B42CF703922}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

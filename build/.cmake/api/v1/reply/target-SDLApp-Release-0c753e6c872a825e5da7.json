@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "MinSizeRel/SDLApp.exe"
+			"path" : "Release/SDLApp.exe"
 		},
 		{
-			"path" : "MinSizeRel/SDLApp.pdb"
+			"path" : "Release/SDLApp.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -45,46 +45,46 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /MD /O1 /Ob1 /DNDEBUG  "
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /MD /O2 /Ob2 /DNDEBUG  "
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 2,
-					"path" : "E:/AIV/SDLCMemes/1945/cmake/sdl2/include"
+					"path" : "E:/AIV/1945li morti di/1945-cringine/cmake/sdl2/include"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "E:/AIV/SDLCMemes/1945/cmake/SDL2_image-2.0.5/include"
+					"path" : "E:/AIV/1945li morti di/1945-cringine/cmake/SDL2_image-2.0.5/include"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "E:/AIV/SDLCMemes/1945/cmake/SDL2_ttf-2.0.15/include"
+					"path" : "E:/AIV/1945li morti di/1945-cringine/cmake/SDL2_ttf-2.0.15/include"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "E:/AIV/SDLCMemes/1945/cmake/SDL2_mixer-2.0.4/include"
+					"path" : "E:/AIV/1945li morti di/1945-cringine/cmake/SDL2_mixer-2.0.4/include"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "E:/AIV/SDLCMemes/1945/include"
+					"path" : "E:/AIV/1945li morti di/1945-cringine/include"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "E:/AIV/SDLCMemes/1945/include/Engine"
+					"path" : "E:/AIV/1945li morti di/1945-cringine/include/Engine"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "E:/AIV/SDLCMemes/1945/include/Math"
+					"path" : "E:/AIV/1945li morti di/1945-cringine/include/Math"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "E:/AIV/SDLCMemes/1945/include/Collections"
+					"path" : "E:/AIV/1945li morti di/1945-cringine/include/Collections"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "E:/AIV/SDLCMemes/1945/include/Components"
+					"path" : "E:/AIV/1945li morti di/1945-cringine/include/Components"
 				}
 			],
 			"language" : "C",
@@ -125,7 +125,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /W3 /MD /O1 /Ob1 /DNDEBUG",
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /MD /O2 /Ob2 /DNDEBUG",
 				"role" : "flags"
 			},
 			{

@@ -67,7 +67,7 @@ typedef struct{
     aiv_vector* scenes_vector;
     uint scene_index;
 }SceneManager;
-init_scene_manager();
+void init_scene_manager();
 void * current_scene();
 void * get_scene_at(int i);
 int register_scene(void * to_register);
@@ -75,6 +75,17 @@ int current_scene_index();
 void go_to_scene(int i);
 void destroy_scene_manager();
 
+
+typedef struct{
+    aiv_vector* sound;
+    aiv_vector* chunks;
+}AudioManager;
+void init_audio_manager();
+void play_sound(int index, int loop);
+void play_chunk(int channel, int index, int loop);
+void destroy_audio_manager();
+void add_music(const char * path);
+void add_chunk(const char * path);
 
 
 #endif
