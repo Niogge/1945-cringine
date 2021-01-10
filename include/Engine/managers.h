@@ -5,6 +5,7 @@
 #include "aiv-dictionary.h"
 #include "aiv-vector.h"
 #include <SDL_image.h>
+#include <SDL_mixer.h>
 typedef struct{
     SDL_Renderer* target;
     aiv_dict* loadedTextures;
@@ -73,5 +74,7 @@ int register_scene(void * to_register);
 int current_scene_index();
 void go_to_scene(int i);
 void destroy_scene_manager();
+
+
 
 #endif

@@ -150,12 +150,14 @@ void game_end(Game* game){
     printf("input mgr destroyed \n");
     destroy_scene_manager();
     printf("scene mgr destroyed \n"); 
-
-    SDL_DestroyRenderer(game->renderer);
-    printf("render free \n");
     destroy_gfxmgr();
     printf("gfx mgr destroyed \n"); 
     SDL_DestroyWindow(game->window);
+    IMG_Quit();
+    printf("image quit\n");
+
+    SDL_DestroyRenderer(game->renderer);
+    printf("render free \n");
     printf("window destroyed \n"); 
     SDL_Quit();
     printf("sdl closed \n"); 
