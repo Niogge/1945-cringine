@@ -15,6 +15,7 @@ typedef struct{
     Animator* animator;
     rigidbody* rb;
     boolean active;
+    boolean mark_of_death;
 }GameObject;
 
 typedef struct _s scene;
@@ -39,5 +40,5 @@ void attach_rigidbody(GameObject* go, rigidbody * rb);
 void set_animator(GameObject* go, Animator* a);
 void destroy_gameobject(GameObject* go);
 void detach_component(GameObject* go, component* c);
-
+void free_gameObject(GameObject* go, scene *s );
 #endif

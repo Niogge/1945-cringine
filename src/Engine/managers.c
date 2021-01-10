@@ -1,4 +1,5 @@
 #include "managers.h"
+#include "scene.h"
 #include <stdio.h>
 #include <string.h>
 
@@ -9,7 +10,7 @@ void init_gfxmgr(SDL_Renderer* renderTarget){
     gfxmgr->target = renderTarget;
 
 }
-Texture* load_texture(const char* path, const char * texture_key , int w, int h){
+void load_texture(const char* path, const char * texture_key , int w, int h){
     SDL_Surface* tempTexture = IMG_Load(path);
 	if (tempTexture != NULL)
 	{
@@ -18,23 +19,23 @@ Texture* load_texture(const char* path, const char * texture_key , int w, int h)
 		if (newTexture == NULL)
 		{
 			printf("Unable to create texture from %s! SDL Error: %s\n", texture_key, SDL_GetError());
-			return NULL;
+			return;
 		}
 		else
 		{
 			tex->txt = newTexture;
 			tex->h =h;
 			tex->w = w;
-            char* key = texture_key;
+             char* key = texture_key;
             aiv_dict_put(gfxmgr->loadedTextures,key,(uint)strlen(key),tex);
+		    SDL_FreeSurface(tempTexture);
+
 		}
-		SDL_FreeSurface(tempTexture);
-		return tex;
 	}
 	else
 	{
 		printf("Unable to load %s image %s! SDL_image Error: %s\n",texture_key, path, IMG_GetError());
-		return NULL;
+		return;
 	}
 }
 
@@ -42,7 +43,27 @@ Texture* get_texture(const char * texture_key ){
     char * key = texture_key;
     return (Texture*)aiv_dict_get(gfxmgr->loadedTextures,key, (uint)strlen(key));
 }
+void destroy_gfxmgr(){
+    for (int i = 0; i < gfxmgr->loadedTextures->__capacity; i++)
+    {
+        dict_node* curr = gfxmgr->loadedTextures->__hashmap[i];
+        while (curr != NULL)
+        {
+             dict_node* next = curr->next;
+            SDL_DestroyTexture(curr->data);
+            printf("texture free \n");
+            curr = next;
+        }
+    }
 
+    aiv_dict_destroy(gfxmgr->loadedTextures);
+    printf("texture dict free \n");
+
+    // SDL_DestroyRenderer(gfxmgr->target);
+    // printf("render free \n");
+
+    free(gfxmgr);
+}
 ///////////////UPDMGR
 
 UpdateManager* new_updmgr(){
@@ -55,7 +76,7 @@ void register_updmgr( UpdateManager * u,GameObject* go){
 }
 void unregister_updmgr(UpdateManager * u,GameObject* go){
     int index =-1;
-    for (int i = 0; i < u->registered_objects->__count; i++)
+    for (uint i = 0; i < u->registered_objects->__count; i++)
     {
         if(u->registered_objects->__items[i] == go){
             index = i;
@@ -78,9 +99,8 @@ void destroy_updmgr(UpdateManager * u){
 }
 
 ///////////////DRAWMGR
-DrawManager* new_drawmgr(SDL_Renderer* renderer){
+DrawManager* new_drawmgr(){
     DrawManager* d = (DrawManager*)malloc(sizeof(DrawManager));
-    d->target = renderer;
     d->registered_objects_fore = aiv_vector_new();
     d->registered_objects_play = aiv_vector_new();
     d->registered_objects_back = aiv_vector_new();
@@ -115,10 +135,10 @@ void unregister_drawmgr(DrawManager* d ,GameObject* go, enum drawLayers layer){
             layer_vector= d->registered_objects_fore;
             break;
         case PLAY:
-            layer_vector= d->registered_objects_fore;
+            layer_vector= d->registered_objects_play;
             break;
         case BACK:
-            layer_vector= d->registered_objects_fore;
+            layer_vector= d->registered_objects_back;
             break;
         case BACKEST:
             layer_vector= d->registered_objects_backest;
@@ -128,7 +148,7 @@ void unregister_drawmgr(DrawManager* d ,GameObject* go, enum drawLayers layer){
     }
 
     int index =-1;
-    for (int i = 0; i < layer_vector->__count; i++)
+    for (uint i = 0; i < layer_vector->__count; i++)
     {
         if(layer_vector->__items[i] == go){
             index = i;
@@ -148,7 +168,7 @@ void INTERNAL_draw(DrawManager* d,aiv_vector * layer_vector){
 
             Sprite* s = ((GameObject*) elem)->texture;
         
-            SDL_RenderCopy(d->target,s->texture,s->renderFrame,s->renderQuad);
+            SDL_RenderCopy(gfxmgr->target,s->texture,s->renderFrame,s->renderQuad);
         }
     }
 }
@@ -172,7 +192,7 @@ void destroy_drawmgr(DrawManager* d ){
 
 static InputManager * _input_manager;
 void init_inputmgr(){
-    _input_manager = (InputManager*)malloc(sizeof(InputManager));
+    _input_manager = (InputManager*)calloc(1,sizeof(InputManager));
     _input_manager->_keyStates = NULL;
 }
 void update_inputmgr(){
@@ -186,8 +206,8 @@ boolean get_key(SDL_Scancode key){
 	return false;
 }
 void destroy_inputmgr(){
-    free(_input_manager->_keyStates);
-    free(_input_manager);
+    // free(_input_manager->_keyStates);
+    // free(_input_manager);
 }
 
 
@@ -202,7 +222,7 @@ void register_physicsmgr(PhysicsManager* phy ,GameObject* go){
 }
 void unregister_physicsmgr(PhysicsManager* phy ,GameObject* go){
     int index =-1;
-    for (int i = 0; i < phy->registered_objects->__count; i++)
+    for (uint i = 0; i < phy->registered_objects->__count; i++)
     {
         if(phy->registered_objects->__items[i] == go){
             index = i;
@@ -309,6 +329,11 @@ void go_to_scene(int i){
     scene_mgr->scene_index = i;
 }
 void destroy_scene_manager(){
+    for (uint i = 0; i < scene_mgr->scenes_vector->__count; i++)
+    {
+        destroy_scene(scene_mgr->scenes_vector->__items[i]);
+    }
+    
     aiv_vector_destroy(scene_mgr->scenes_vector);
     free(scene_mgr);
 }

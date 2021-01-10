@@ -9,7 +9,12 @@ void bullet_behaviour_init(component * self){
 }
 
 void bullet_behaviour_update(component* self,float dt){
-    
+    bullet_behaviour_data* data = self->data;
+    data->life -= dt;
+    if(data->life <= 0){
+        data->life= data->max_life;
+        self->owner->active = false;
+    }
 }
 void bullet_behaviour_destructor(component* self){
     free(self);
@@ -26,6 +31,8 @@ component* new_bullet_behaviour(vec2 direction, float speed){
     bullet_behaviour_data* data= (bullet_behaviour_data*)malloc(sizeof(bullet_behaviour_data));
     data->dir = direction;
     data->speed = speed;
+    data->life = 5;
+    data->max_life = 5;
     c->data = data;
     c->destructor =bullet_behaviour_destructor;
     c->onCollision = bullet_behaviour_collision;

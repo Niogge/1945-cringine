@@ -24,7 +24,7 @@ GameObject* enemy_factory(scene* s){
 }
 
 void enemy_spawner_init(component * self, scene*s){
-    srand(time(0));
+    srand((uint)time((time_t)0));
     for (int i = 0; i < 20; i++)
     {
         GameObject* en_go = enemy_factory(s);
@@ -36,9 +36,9 @@ void enemy_spawner_init(component * self, scene*s){
 void enemy_spawner_update(component* self,float dt){
     if(((enemy_spawner_data*)self->data)->spawnCD_elapsed >=((enemy_spawner_data*)self->data)->spawnCD ){
             GameObject* enemy = (GameObject*) aiv_vector_pop(((enemy_spawner_data*)self->data)->enemy_pool);
-            int minX =((enemy_spawner_data*)self->data)->XRange.x; 
-            int maxX = ((((enemy_spawner_data*)self->data)->XRange.y - ((enemy_spawner_data*)self->data)->XRange.x));
-            float Xpos =minX+ (rand()%maxX);         
+            int minX =(int)((enemy_spawner_data*)self->data)->XRange.x; 
+            int maxX = (int)((((enemy_spawner_data*)self->data)->XRange.y - ((enemy_spawner_data*)self->data)->XRange.x));
+            float Xpos = (float) minX + (rand() % maxX);
             vec2 enemypos = vec2_new(Xpos,-50);
             enemy->position = enemypos;
             enemy->rb->pos = enemypos;
@@ -53,10 +53,10 @@ void enemy_spawner_update(component* self,float dt){
 }
 
 void enemy_spawner_destructor(component* self){
-    for (int i = 0; i < ((enemy_spawner_data*)self->data)->enemy_pool->__count; i++)
-    {
-        destroy_gameobject(((enemy_spawner_data*)self->data)->enemy_pool->__items[i]);
-    }
+    // for (uint i = 0; i < ((enemy_spawner_data*)self->data)->enemy_pool->__count; i++)
+    // {
+    //     destroy_gameobject(((enemy_spawner_data*)self->data)->enemy_pool->__items[i]);
+    // }
     aiv_vector_destroy(((enemy_spawner_data*)self->data)->enemy_pool);
     free(self->data);
     free(self);

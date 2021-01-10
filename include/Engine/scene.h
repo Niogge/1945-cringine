@@ -15,6 +15,6 @@ typedef struct _s scene;
 scene* new_scene(void(*builder)(scene* s), Game* game);
 void add_scene_object(scene* scene, GameObject * go);
 void remove_scene_object(scene* scene, GameObject * go);
-
+void clean_up_scene(scene* scene);
 void destroy_scene(scene* scene);
 #endif

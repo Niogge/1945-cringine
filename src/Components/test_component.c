@@ -22,7 +22,7 @@ void test_destructor(component* self){
 }
 
 void test_on_collision(component* self, GameObject* other){
-    int p =  self->owner->position.x;
+    int p =  (int)self->owner->position.x;
     printf("colliding %d\n", p );
 
 }

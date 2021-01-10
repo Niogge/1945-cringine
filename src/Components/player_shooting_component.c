@@ -43,6 +43,7 @@ void player_shooting_update(component* self,float dt){
             bullet->active = true;
             aiv_vector_add(((shooting_data*)self->data)->pool, bullet);
             ((shooting_data*)self->data)->shootCD_elapsed = 0;
+             ((shooting_data*)self->data)->shoot_offset.x *= -1;
         }
     }
     else{
@@ -50,7 +51,7 @@ void player_shooting_update(component* self,float dt){
     }
 }
 void player_shooting_destructor(component* self){
-    for (int i = 0; i < ((shooting_data*)self->data)->pool->__count; i++)
+    for (uint i = 0; i < ((shooting_data*)self->data)->pool->__count; i++)
     {
         destroy_gameobject(((shooting_data*)self->data)->pool->__items[i]);
     }
@@ -74,7 +75,7 @@ component* new_player_shooting(){
     ((shooting_data*)c->data)->pool = aiv_vector_new();
     ((shooting_data*)c->data)->shootCD = 0.1f;
     ((shooting_data*)c->data)->shootCD_elapsed = 0.5f;
-    ((shooting_data*)c->data)->shoot_offset = vec2_new(0,-50);
+    ((shooting_data*)c->data)->shoot_offset = vec2_new(-15,-50);
 
     return c;
 }

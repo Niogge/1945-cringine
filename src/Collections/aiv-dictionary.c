@@ -6,7 +6,7 @@ uint djb33x_hash(void* key, uint keylen){
     char* k = (char * )key;
     int hash = 5381;//seed 
     char* key_as_num = (char*)key; //key in byte array
-    for (int i = 0; i < keylen; i++)
+    for (uint i = 0; i < keylen; i++)
     {
         hash = ((hash << 5 ) + hash) ^ key_as_num[i]; //lshift = moltiplication
     }
@@ -14,7 +14,7 @@ uint djb33x_hash(void* key, uint keylen){
 }
 
 aiv_dict* aiv_dict_new(){
-    return aiv_dict_new_capacity(10);
+    return aiv_dict_new_capacity(20);
 }
 aiv_dict* aiv_dict_new_capacity(int capacity){
     aiv_dict* dict = (aiv_dict*)malloc(sizeof(aiv_dict));
@@ -97,7 +97,7 @@ void aiv_dict_put(aiv_dict* dict, void* key, uint keylen,  void* val){
         node->next= NULL;
         dict->__hashmap[hash_index] = node;
         Texture* d =(Texture*) dict->__hashmap[hash_index]->data;
-        puts("");
+        //puts("");
     }
     else{ //hash(key) exists
         dict_node * currnode = dict->__hashmap[hash_index];

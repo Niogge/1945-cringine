@@ -22,6 +22,9 @@ GameObject* enemy_bullet_factory(scene * s){
 
 void enemy_behaviour_component_init(component* self){
 }
+void self_deactivate(void * go){
+    ((GameObject*)go)->active =false;
+}
 void enemy_behaviour_component_init_scene(component* self, scene *s ){
     for (int i = 0; i < 10; i++)
     {
@@ -30,6 +33,15 @@ void enemy_behaviour_component_init_scene(component* self, scene *s ){
         aiv_vector_add(((enemy_behaviour_component_data*)self->data)->pool, bullet_go);
 
     }
+    GameObject* expl = new_gameobject(self->owner->position,get_texture("explosion"));
+    Animator * anim = new_animator();
+    Clip* clip = new_clip_no_loop(vec2_new(0,0), vec2_new(6,0),65,65,10,self_deactivate);
+    add_clip(anim,clip);
+    set_animator(expl,anim);
+    add_scene_object(s, expl);
+    expl->active = false;
+    enemy_behaviour_component_data* data = self->data;
+    data->death_particle = expl;
 }
 void enemy_behaviour_component_update(component* self,float dt){
     if(((enemy_behaviour_component_data*)self->data)->shootCD_elapsed>= ((enemy_behaviour_component_data*)self->data)->shootCD){
@@ -47,9 +59,18 @@ void enemy_behaviour_component_update(component* self,float dt){
     }
 }
 void enemy_behaviour_component_destructor(component* self){
+    enemy_behaviour_component_data * data = self->data;
+
+    //destroy_gameobject(data->death_particle);
+    aiv_vector_destroy(data->pool);
+    free(self);
 }
+
 void enemy_behaviour_component_on_collision(component* self, GameObject* other){
     self->owner->active = false;
+    enemy_behaviour_component_data *data = self->data;
+    data->death_particle->position = self->owner->position;
+    data->death_particle->active =true;
 }
 component* new_enemy_behaviour_component(){
     component* c = (component* )malloc(sizeof(component));
@@ -61,6 +82,7 @@ component* new_enemy_behaviour_component(){
     data->shootCD = 0.3f;
     data->shootCD_elapsed = 0.f;
     data->shoot_offset = vec2_new(0,50);
+ 
     /*fill in data*/
     c->data = data;
     c->destructor = enemy_behaviour_component_destructor;

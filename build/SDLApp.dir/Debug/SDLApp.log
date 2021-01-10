@@ -1,0 +1,13 @@
+﻿  managers.c
+E:\AIV\SDLCMemes\1945\src\Engine\managers.c(29): warning C4090: 'initializing': different 'const' qualifiers
+E:\AIV\SDLCMemes\1945\src\Engine\managers.c(43): warning C4090: 'initializing': different 'const' qualifiers
+E:\AIV\SDLCMemes\1945\src\Engine\managers.c(199): warning C4090: '=': different 'const' qualifiers
+E:\AIV\SDLCMemes\1945\src\Engine\managers.c(251): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+E:\AIV\SDLCMemes\1945\src\Engine\managers.c(252): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+E:\AIV\SDLCMemes\1945\src\Engine\managers.c(253): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+E:\AIV\SDLCMemes\1945\src\Engine\managers.c(254): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+E:\AIV\SDLCMemes\1945\src\Engine\managers.c(257): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+E:\AIV\SDLCMemes\1945\src\Engine\managers.c(258): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+E:\AIV\SDLCMemes\1945\src\Engine\managers.c(259): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+E:\AIV\SDLCMemes\1945\src\Engine\managers.c(260): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  SDLApp.vcxproj -> E:\AIV\SDLCMemes\1945\build\Debug\SDLApp.exe

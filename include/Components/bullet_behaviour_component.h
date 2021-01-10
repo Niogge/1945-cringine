@@ -5,6 +5,8 @@
 typedef struct{
     vec2 dir;
     float speed;
+    float life;
+    float max_life;
 }bullet_behaviour_data;
 void bullet_behaviour_init(component * self);
 void bullet_behaviour_update(component* self,float dt);

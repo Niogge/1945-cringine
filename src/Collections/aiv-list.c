@@ -140,7 +140,7 @@ void aiv_list_remove_at(aiv_list*list, const uint index){
     }
     else{
         aiv_node* elem = list->__head;
-        for (int i = 0; i < index; i++)
+        for (uint i = 0; i < index; i++)
         {
             elem = elem->__next;
         }

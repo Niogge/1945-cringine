@@ -73,12 +73,12 @@ void aiv_vector_set(aiv_vector* vector, const uint index, void* elem){
 
 void aiv_vector_add_all(aiv_vector* vector, aiv_vector* other){
 
-    int n_of_elements = vector->__count + other->__count;
+    uint n_of_elements = vector->__count + other->__count;
     if((n_of_elements)>= vector->__capacity){
         vector = aiv_vector_resize(vector,(n_of_elements)*2 );
     }
 
-    for (int i = 0; i < other->__count; i++)
+    for (uint i = 0; i < other->__count; i++)
     {
         vector->__items[i+vector->__count] = other->__items[i];
         vector->__count++;
@@ -89,7 +89,7 @@ void aiv_vector_add_all(aiv_vector* vector, aiv_vector* other){
 void* aiv_vector_remove_at(aiv_vector* vector, const uint index){
     if(index >= vector->__count) return NULL;
     void * removedItem = vector->__items[index];
-    for (int i = index; i < vector->__count-1; i++)
+    for (uint i = index; i < vector->__count-1; i++)
     {
         vector->__items[i] = vector->__items[i+1];
     }
@@ -113,7 +113,7 @@ void aiv_vector_insert_at(aiv_vector* vector, const uint index, void* elem){
     }
     void* old;
     void* new = elem;
-    for (int i = index; i < vector->__count; i++)
+    for (uint i = index; i < vector->__count; i++)
     {
         old = vector->__items[i];
         vector->__items[i] = new;
@@ -123,7 +123,7 @@ void aiv_vector_insert_at(aiv_vector* vector, const uint index, void* elem){
 }
 
 void* aiv_vector_find_one(aiv_vector* vector, boolean(*func)(void*)){
-    for (int i = 0; i < vector->__count; i++)
+    for (uint i = 0; i < vector->__count; i++)
     {
         if(func(vector->__items[i])){
             return vector->__items[i];
@@ -135,7 +135,7 @@ void* aiv_vector_find_one(aiv_vector* vector, boolean(*func)(void*)){
 aiv_vector* aiv_vector_find_all(aiv_vector* vector, boolean(*func)(void*))
 {
     aiv_vector* vec = aiv_vector_new();
-    for (int i = 0; i < vector->__count; i++)
+    for (uint i = 0; i < vector->__count; i++)
     {
         if(func(vector->__items[i])){
             aiv_vector_add(vec, vector->__items[i]);
@@ -151,7 +151,7 @@ void aiv_vector_bubble(aiv_vector* vector, int (*comparator)(void*,void*)){
     boolean swap = true;
     while(swap){ // worst case -> O(N)
         swap = false;
-        for (int i = 0; i < vector->__count-1; i++) //size -1 * 5 =>  N => O(N)
+        for (uint i = 0; i < vector->__count-1; i++) //size -1 * 5 =>  N => O(N)
         {
             if(comparator(vector->__items[i], vector->__items[i+1]) > 0){
 

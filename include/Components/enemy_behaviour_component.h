@@ -7,6 +7,7 @@ typedef struct{
     float shootCD;
     float shootCD_elapsed;
     vec2 shoot_offset;
+    GameObject* death_particle; 
 } enemy_behaviour_component_data;
 void enemy_behaviour_component_init(component* self);
 void enemy_behaviour_component_init_scene(component* self, scene *s);

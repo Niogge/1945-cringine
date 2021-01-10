@@ -1,0 +1,260 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SDLPrj",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-831fd115024ecae6b0a5.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SDLApp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SDLApp-Debug-0d9a91856cf3cb911010.json",
+					"name" : "SDLApp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-f324d36f7bcf2adddb59.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SDLPrj",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-831fd115024ecae6b0a5.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SDLApp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SDLApp-Release-ffa3b134d337b4558f71.json",
+					"name" : "SDLApp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-f324d36f7bcf2adddb59.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SDLPrj",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-831fd115024ecae6b0a5.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SDLApp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SDLApp-MinSizeRel-6a2100eedfa8c97ce68e.json",
+					"name" : "SDLApp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-f324d36f7bcf2adddb59.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SDLPrj",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-831fd115024ecae6b0a5.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SDLApp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SDLApp-RelWithDebInfo-204f1f21be94cb6363fe.json",
+					"name" : "SDLApp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-f324d36f7bcf2adddb59.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "E:/AIV/SDLCMemes/1945/build",
+		"source" : "E:/AIV/SDLCMemes/1945"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

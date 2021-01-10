@@ -7,4 +7,5 @@
 #include "background_component.h"
 #include "enemy_spawn_component.h"
 #include "enemy_behaviour_component.h"
+#include "lives_handler_component.h"
 #endif

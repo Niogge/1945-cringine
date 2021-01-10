@@ -11,8 +11,9 @@ typedef struct{
 
 }GraphicsManager; 
 void init_gfxmgr(SDL_Renderer* renderTarget);
-Texture* load_texture( const char* path, const char* texture_key, int neww, int newh);
+void load_texture( const char* path, const char* texture_key, int neww, int newh);
 Texture* get_texture(const char* texture_key );
+void destroy_gfxmgr();
 
 typedef struct{
     aiv_vector* registered_objects;
@@ -25,13 +26,12 @@ void destroy_updmgr(UpdateManager * u);
 
 enum drawLayers{FORE,PLAY,BACK,BACKEST};
 typedef struct{
-    SDL_Renderer* target;
     aiv_vector* registered_objects_backest;
     aiv_vector* registered_objects_back;
     aiv_vector* registered_objects_play;
     aiv_vector* registered_objects_fore;
 }DrawManager; 
-DrawManager* new_drawmgr(SDL_Renderer* renderer);
+DrawManager* new_drawmgr();
 void register_drawmgr(DrawManager* d ,GameObject* go,enum drawLayers layer);
 void unregister_drawmgr(DrawManager* d ,GameObject* go,enum drawLayers layer);
 void draw(DrawManager* d);
@@ -43,9 +43,7 @@ void destroy_drawmgr(DrawManager* d );
 typedef struct{
     Uint8* _keyStates;
 }InputManager;
-
-
-new_inputmgr();
+void init_inputmgr();
 void update_inputmgr();
 boolean get_key(SDL_Scancode key);
 void destroy_inputmgr();
