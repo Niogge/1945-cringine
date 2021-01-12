@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "MinSizeRel/SDLApp.exe"
+			"path" : "Release/SDLApp.exe"
 		},
 		{
-			"path" : "MinSizeRel/SDLApp.pdb"
+			"path" : "Release/SDLApp.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -45,7 +45,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /MD /O1 /Ob1 /DNDEBUG  "
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /MD /O2 /Ob2 /DNDEBUG  "
 				}
 			],
 			"includes" : 
@@ -125,7 +125,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /W3 /MD /O1 /Ob1 /DNDEBUG",
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /MD /O2 /Ob2 /DNDEBUG",
 				"role" : "flags"
 			},
 			{
@@ -198,7 +198,8 @@
 				37,
 				38,
 				39,
-				40
+				40,
+				41
 			]
 		}
 	],
@@ -372,6 +373,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "include/Components/lives_handler_component.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/Components/my_component.h",
 			"sourceGroupIndex" : 1
 		},
 		{

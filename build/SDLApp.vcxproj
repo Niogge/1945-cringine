@@ -450,6 +450,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\enemy_behaviour_component.h" />
     <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\enemy_spawn_component.h" />
     <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\lives_handler_component.h" />
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\my_component.h" />
     <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\player_movement_component.h" />
     <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\player_shooting_component.h" />
     <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\test_component.h" />

@@ -17,6 +17,7 @@ void bullet_behaviour_update(component* self,float dt){
     }
 }
 void bullet_behaviour_destructor(component* self){
+    free(self->data);
     free(self);
 }
 

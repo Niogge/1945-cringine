@@ -93,6 +93,9 @@
     <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\lives_handler_component.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\my_component.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="E:\AIV\1945li morti di\1945-cringine\include\Components\player_movement_component.h">
       <Filter>Header Files</Filter>
     </ClInclude>
