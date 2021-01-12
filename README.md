@@ -76,7 +76,7 @@ After a component is created you have to attach to a gameobject with its specifi
 Components functions, except init and init_scene, are called by managers or gameobject it self when they are needed, no need to worry about them just write the game logic! :)
 <br>
 <br>
-But how can you create, say, a bullet?<br?>
+But how can you create, say, a bullet?<br>
 ### Factory Example
 Take my bullet factory as an example:
 ```c
